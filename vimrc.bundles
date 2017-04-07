@@ -1,0 +1,52 @@
+call plug#begin('~/.vim/bundle')
+
+" Plug 'christoomey/vim-run-interactive'
+" Plug 'janko-m/vim-test'
+" Plug 'pbrisbin/vim-mkdir'
+" Plug 'tpope/vim-bundler'
+" Plug 'tpope/vim-endwise'
+" Plug 'tpope/vim-eunuch'
+" Plug 'tpope/vim-fugitive'
+" Plug 'tpope/vim-projectionist'
+" Plug 'tpope/vim-rake'
+" Plug 'tpope/vim-repeat'
+" Plug 'tpope/vim-rhubarb'
+" Plug 'tpope/vim-surround'
+" Plug 'vim-ruby/vim-ruby'
+" Plug 'vim-scripts/tComment'
+
+" plugins:
+" dbext.vim
+" vim-snipmate
+" vim-snippets
+" vim-markdown-preview
+Plug 'mileszs/ack.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'scrooloose/syntastic'
+Plug 'tomtom/tlib_vim'
+Plug 'edkolev/tmuxline.vim'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'altercation/vim-colors-solarized'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rails'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'jpo/vim-railscasts-theme'
+Plug 'thoughtbot/vim-rspec'
+Plug 'slim-template/vim-slim'
+Plug 'vimwiki/vimwiki'
+Plug 'vim-ruby/vim-ruby'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 't9md/vim-ruby-xmpfilter'
+Plug 'godlygeek/tabular'
+Plug 'digitaltoad/vim-pug'
+
+if filereadable(expand("~/.vimrc.bundles.local"))
+  source ~/.vimrc.bundles.local
+endif
+
+call plug#end()

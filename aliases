@@ -1,0 +1,22 @@
+# vim: set ft=sh:
+
+# Unix
+alias ll="ls -al"
+alias ln="ln -v"
+alias mkdir="mkdir -p"
+alias e="$EDITOR"
+alias v="$VISUAL"
+alias path='echo $PATH | tr -s ":" "\n"'
+
+# Bundler
+alias be='bundle exec'
+
+# Rails
+alias r-migrate='bundle exec rake db:drop db:create db:migrate db:seed'
+
+# Safe file removal
+alias rm="echo '!! use DEL !!'"
+alias del='rmtrash'
+
+# Include custom aliases
+[[ -f ~/.aliases.local ]] && source ~/.aliases.local

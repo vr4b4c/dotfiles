@@ -28,9 +28,8 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
-" Default line width(vertical line)
-" set textwidth=100
-" set colorcolumn=+1
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start
 
 set nu
 set hlsearch

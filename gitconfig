@@ -1,5 +1,8 @@
+[user]
+  name = Vedran Hrncic
+  email = vedran.hrncic@infinum.hr
 [core]
-	excludesfile = /Users/vrabac/.gitignore
+	excludesfile = ~/.gitignore
 [push]
   default = simple
 [include]

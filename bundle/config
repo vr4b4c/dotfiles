@@ -1,0 +1,7 @@
+---
+BUNDLE_DISABLE_LOCAL_BRANCH_CHECK: "true"
+BUNDLE_LOCAL__USFM_TRANSFORMER: "/Users/vrabac/dev/ruby/infinum/usfm_transformer"
+BUNDLE_GEM__TEST: "rspec"
+BUNDLE_GEM__MIT: "false"
+BUNDLE_GEM__COC: "true"
+BUNDLE_JOBS: "4"

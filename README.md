@@ -22,26 +22,22 @@ SourceTree
   - Download and install
 
 ## Operations
- - mute sound on terminal
-   Terminal > Preferences > Profiles > Advanced > Audible bell(uncheck)
- - dock on the left
-  System Preferences > Dock > Position on screen > Left
- - inverse mouse scroll
-  Trackpad > *
- - Toggle autohide dock
-  Cmd + Alt + D
- - setup terminal color, transparency
-  * Pick profile
+  - Mute sound on terminal
+    Terminal > Preferences > Profiles > Advanced > Audible bell(uncheck)
+  - Dock on the left
+    System Preferences > Dock > Position on screen > Left
+  - Inverse mouse scroll
+    Trackpad > *
+  - Toggle auto-hide dock
+    Cmd + Alt + D
+  - Setup terminal color, transparency
     - duplicate Pro and name Pro Vrabac
-    - Font: Ubuntu Mono derivative Powerline 14 pt(was Monaco 10pt)
-    - Text: check Antialias text
- - Assign a key to each Space
-  Keyboard > Shortcuts > MissionControl > Check Switch to Desktop n
- - Powerline fonts
-  - clone fonts https://github.com/powerline/fonts
-  - run ./install.sh
-  - Terminal > Preferences > Text > Font > Ubuntu Mono derivative Powerline 14 pt.(was Monaco 10 pt)
-  - font looks bolder on Pro compared to Air
+    - Font: Ubuntu Mono derivative Powerline 14 pt
+    - Text: *check* Antialias text
+  - Assign a key to each Space
+    Keyboard > Shortcuts > MissionControl > Check Switch to Desktop n
+  - Powerline fonts
+  - clone fonts from https://github.com/powerline/fonts and run ./install.sh
 
 After:
   - export Postico connections

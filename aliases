@@ -18,5 +18,7 @@ alias r-migrate='bundle exec rake db:drop db:create db:migrate db:seed'
 alias rm="echo '!! use DEL !!'"
 alias del='rmtrash'
 
+alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
+
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local

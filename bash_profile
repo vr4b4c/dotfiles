@@ -7,7 +7,7 @@
 [[ -f $HOME/.aliases ]] && source $HOME/.aliases
 
 # local bin
-[[ -d $HOME/bin ]] && export PATH="$HOME/bin:$PATH"
+[[ -d $HOME/.bin ]] && export PATH="$HOME/.bin:$PATH"
 
 # Prompt
 export PS1='[\u - \W]\$ '

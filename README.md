@@ -6,7 +6,6 @@ env RCRC=$HOME/dotfiles/rcrc rcup
 ```
 ## TODO
  - Heroku Toolbelt
- - setup up rbenv#default-gems(bundler, powder, pry) and to link with dotfiles
 
 ## Software
 Homebrew
@@ -50,6 +49,7 @@ After:
 ```
 createuser -s postgres
 ```
+  - install https://github.com/rbenv/rbenv-default-gems
   - add valut token
 ```bash
 echo "export VAULT_AUTH_TOKEN=secret-token" >> $HOME/.bash_profile.local

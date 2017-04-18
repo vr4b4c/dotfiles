@@ -8,49 +8,17 @@ env RCRC=$HOME/dotfiles/rcrc rcup
  - Heroku Toolbelt
  - setup up rbenv#default-gems(bundler, powder, pry) and to link with dotfiles
 
-## Brew packages
- - postgresql
-```
-brew services start postgresql
-createuser -s postgres
-```
- - mysql
-```
-brew services start mysql
-```
- - redis
-```
-brew services start redis
-```
- - tmux
- - git
- - rbenv
- - rcm
- - rmtrash
- - ack
- - git-flow
- - reattach-to-user-namespace # cp in tmux from vim
- - bash-completion
-
-## Brew cask packages
- - dropbox
- - zeplin
- - transmission
- - vlc
-
 ## Software
-Goolgle Chrome
-  - Download and install(are you sure it wasn't cask??)
+Homebrew
+  - Run script from https://brew.sh
 Postico
   - Download and install
 Slack
   - Download and install
-spectacle
+Spectacle
   - Download and install
 Pow
   - curl get.pow.cx | sh
-Homebrew
-  - Run script from https://brew.sh
 SourceTree
   - Download and install
 
@@ -78,6 +46,10 @@ SourceTree
 
 After:
   - export Postico connections
+  - create Postgres user
+```
+createuser -s postgres
+```
   - add valut token
 ```bash
 echo "export VAULT_AUTH_TOKEN=secret-token" >> $HOME/.bash_profile.local

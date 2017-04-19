@@ -44,6 +44,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 't9md/vim-ruby-xmpfilter'
 Plug 'godlygeek/tabular'
 Plug 'digitaltoad/vim-pug'
+Plug 'pbrisbin/vim-mkdir'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local

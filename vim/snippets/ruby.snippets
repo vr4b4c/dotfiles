@@ -1,0 +1,8 @@
+# Rspec snippets
+snippet rdesc
+	RSpec.describe ${1:`substitute(substitute(vim_snippets#Filename(), '_spec$', '', ''), '\(_\|^\)\(.\)', '\u\2', 'g')`} do
+		${0}
+	end
+# Factory Girl
+snippet fgc
+	FactoryGirl.create(:${1:factory})

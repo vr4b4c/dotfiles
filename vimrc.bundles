@@ -45,6 +45,8 @@ Plug 't9md/vim-ruby-xmpfilter'
 Plug 'godlygeek/tabular'
 Plug 'digitaltoad/vim-pug'
 Plug 'pbrisbin/vim-mkdir'
+Plug 'garbas/vim-snipmate'
+Plug 'honza/vim-snippets'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local

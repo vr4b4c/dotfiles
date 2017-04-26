@@ -1,0 +1,24 @@
+#!/usr/bin/env sh
+
+if [ -f ~/.tmux.conf ]; then
+  tmux source-file ~/.tmux.conf;
+fi
+
+SESSION=maistra
+tmux has-session -t $SESSION
+if [ $? != 0 ]
+then
+  PROJECT=$HOME/dev/rails/infinum/maistra
+
+  # src
+  tmux new-session -s $SESSION -n src -d
+  tmux send-keys -t $SESSION:1 "cd $PROJECT" C-m
+
+  # server
+  tmux new-window -n server -t $SESSION
+  tmux send-keys -t $SESSION:2 "cd $PROJECT" C-m
+
+  tmux select-window -t $SESSION:1
+fi
+
+tmux attach -t $SESSION

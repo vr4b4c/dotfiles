@@ -28,7 +28,7 @@ then
   tmux split-window -v -t $SESSION:3
   tmux send-keys -t $SESSION:3.1 "cd $FRONTEND" C-m 
   tmux send-keys -t $SESSION:3.1 "n 6.9.5" C-m
-  tmux send-keys -t $SESSION:3.1 "node_modules/.bin/gulp watch:all" C-m
+  tmux send-keys -t $SESSION:3.1 "npm run dev-server" C-m
   tmux send-keys -t $SESSION:3.2 "cd $FRONTEND" C-m
 
   # frontend

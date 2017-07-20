@@ -48,6 +48,7 @@ Plug 'pbrisbin/vim-mkdir'
 Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
 Plug 'mtscout6/syntastic-local-eslint.vim'
+Plug 'elixir-lang/vim-elixir'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local

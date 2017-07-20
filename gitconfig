@@ -3,6 +3,7 @@
   email = vedran.hrncic@infinum.hr
 [core]
 	excludesfile = /Users/vrabac/.gitignore
+	editor = vim
 [push]
   default = simple
 [include]

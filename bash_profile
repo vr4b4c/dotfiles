@@ -16,6 +16,9 @@ export PS1='[\u - \W]\$ '
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - --no-rehash)"
 
+# kiex
+test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
+
 # Vim
 stty -ixon
 

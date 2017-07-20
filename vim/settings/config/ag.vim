@@ -4,5 +4,5 @@ if executable('ag')
   set grepprg=ag\ --nogroup\ --nocolor
 
   " Silver searcher with ack
-  let g:ackprg = 'ag --nogroup --nocolor --column'
+  let g:ackprg = 'ag --nogroup --nocolor --column --vimgrep'
 endif

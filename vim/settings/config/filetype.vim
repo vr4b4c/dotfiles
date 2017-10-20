@@ -7,5 +7,5 @@ au BufRead,BufNewFile *.jade setlocal filetype=jade
 au BufNewFile,BufReadPost *.jade set filetype=pug
 au FileType jade,markdown setlocal textwidth=0
 
-au FileType ruby setlocal textwidth=100 colorcolumn=+1
+au FileType ruby,elixir setlocal textwidth=100 colorcolumn=+1
 au FileType javascript setlocal textwidth=100 colorcolumn=+1

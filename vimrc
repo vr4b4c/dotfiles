@@ -54,5 +54,6 @@ source $HOME/.vim/settings/plugin/rspec.vim
 source $HOME/.vim/settings/plugin/jsx.vim
 source $HOME/.vim/settings/plugin/wiki.vim
 source $HOME/.vim/settings/plugin/ruby-xmpfilter.vim
+source $HOME/.vim/settings/plugin/neomake.vim
 " source $HOME/.vim/settings/plugin/markdown.vim
 " source $HOME/.vim/vrabac/plugin/tabular.vim

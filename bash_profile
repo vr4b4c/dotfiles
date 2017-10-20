@@ -16,8 +16,8 @@ export PS1='[\u - \W]\$ '
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - --no-rehash)"
 
-# kiex
-test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
+# Enable REPL history
+export ERL_AFLAGS="-kernel shell_history enabled"
 
 # Vim
 stty -ixon
@@ -41,3 +41,7 @@ done
 
 # Local overrides
 [[ -f ~/.bash_profile.local ]] && source ~/.bash_profile.local
+
+# asdf
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash

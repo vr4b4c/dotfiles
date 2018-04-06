@@ -1,31 +1,37 @@
-tap 'caskroom/cask'
-tap 'homebrew/bundle'
-tap 'homebrew/core'
-tap 'homebrew/services'
-tap 'thoughtbot/formulae'
-
-brew 'thoughtbot/formulae/rcm'
-brew 'mysql', restart_service: true
-brew 'postgresql', restart_service: true
-brew 'redis', restart_service: true
-
-brew 'ack'
-brew 'bash-completion'
-brew 'git'
-brew 'git-flow'
-brew 'node'
-brew 'rbenv'
-brew 'reattach-to-user-namespace'
-brew 'rmtrash'
-brew 'the_silver_searcher'
-brew 'tmux'
-brew 'tree'
-brew 'vim'
-
-cask 'google-chrome'
-cask 'dropbox'
-cask 'ngrok'
-cask 'sublime-text'
-cask 'transmission'
-cask 'vlc'
-cask 'zeplin'
+tap "caskroom/cask"
+tap "homebrew/bundle"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "puma/puma"
+tap "thoughtbot/formulae"
+brew "ack"
+brew "bash-completion"
+brew "coreutils"
+brew "erlang"
+brew "fwup"
+brew "git"
+brew "git-flow"
+brew "htop"
+brew "imagemagick"
+brew "libssh2"
+brew "mysql", restart_service: true
+brew "postgresql", restart_service: true
+brew "rbenv"
+brew "reattach-to-user-namespace"
+brew "redis", restart_service: true
+brew "rmtrash"
+brew "squashfs"
+brew "the_silver_searcher"
+brew "tmux"
+brew "tree"
+brew "vim"
+brew "yarn"
+brew "puma/puma/puma-dev"
+brew "thoughtbot/formulae/rcm"
+cask "dropbox"
+cask "google-chrome"
+cask "mysqlworkbench"
+cask "rdm"
+cask "sublime-text"
+cask "transmission"
+cask "vlc"

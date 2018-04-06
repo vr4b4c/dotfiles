@@ -1,7 +1,8 @@
 # Install
 
 ```bash
-git clone github.com/v3dr4n/dotfiles ~/dotfiles
+brew install rcup
+git clone git@github.com:vr4b4c/dotfiles.git ~/dotfiles
 env RCRC=$HOME/dotfiles/rcrc rcup
 ```
 ## TODO
@@ -16,10 +17,10 @@ Slack
   - Download and install
 Spectacle
   - Download and install
-Pow
-  - curl get.pow.cx | sh
 SourceTree
   - Download and install
+asdf
+  - https://github.com/asdf-vm/asdf#setup
 
 ## Operations
   - Mute sound on terminal
@@ -27,17 +28,16 @@ SourceTree
   - Dock on the left
     System Preferences > Dock > Position on screen > Left
   - Inverse mouse scroll
-    Trackpad > *
+    System Preferences > Trackpad > Scroll & Zoom > uncheck Scroll Direction: Natural
   - Toggle auto-hide dock
     Cmd + Alt + D
-  - Setup terminal color, transparency
-    - duplicate Pro and name Pro Vrabac
-    - Font: Ubuntu Mono derivative Powerline 14 pt
-    - Text: *check* Antialias text
-  - Assign a key to each Space
-    Keyboard > Shortcuts > MissionControl > Check Switch to Desktop n
   - Powerline fonts
-  - clone fonts from https://github.com/powerline/fonts and run ./install.sh
+    clone fonts from https://github.com/powerline/fonts
+    run ./install.sh
+  - Setup terminal color, transparency
+    duplicate Pro and name Pro Vrabac
+    change font > Ubuntu Mono derivative Powerline 14 pt
+    check Text > Antialias text
 
 After:
   - export Postico connections

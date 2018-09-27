@@ -1,6 +1,6 @@
 [user]
-  name = Vedran Hrncic
-  email = vedran.hrncic@infinum.hr
+	name = Vedran Hrncic
+	email = vedran.hrncic@infinum.hr
 [core]
 	excludesfile = /Users/vrabac/.gitignore
 	editor = vim
@@ -12,5 +12,7 @@
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[commit]
+	template = /Users/vrabac/.stCommitMsg

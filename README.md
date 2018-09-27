@@ -21,10 +21,14 @@ SourceTree
   - Download and install
 asdf
   - https://github.com/asdf-vm/asdf#setup
+Croatian-US-mac keyboard
+  - https://github.com/kost/Croatian-US-mac#installation
+rbenv default gems
+  - https://github.com/rbenv/rbenv-default-gems#installation
 
 ## Operations
   - Mute sound on terminal
-    Terminal > Preferences > Profiles > Advanced > Audible bell(uncheck)
+    Terminal > Preferences > Profiles > Advanced > Uncheck Audible bell & Visual Bell
   - Dock on the left
     System Preferences > Dock > Position on screen > Left
   - Inverse mouse scroll
@@ -38,6 +42,9 @@ asdf
     duplicate Pro and name Pro Vrabac
     change font > Ubuntu Mono derivative Powerline 14 pt
     check Text > Antialias text
+  - Keyboard speed
+    System Preferences > Keyboard > Key repeat > Slide to Fast
+    System Preferences > Keyboard > Delay until repeat > Slide to Short
 
 After:
   - export Postico connections

@@ -13,8 +13,7 @@
 export PS1='[\u - \W]\$ '
 
 # rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init - --no-rehash)"
+eval "$(rbenv init -)"
 
 # Enable REPL history
 export ERL_AFLAGS="-kernel shell_history enabled"

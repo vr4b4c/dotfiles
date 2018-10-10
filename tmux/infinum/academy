@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+
+if [ -f ~/.tmux.conf ]; then
+  tmux source-file ~/.tmux.conf;
+fi
+
+SESSION=infinum-academy
+tmux has-session -t $SESSION
+if [ $? != 0 ]
+then
+  PROJECT=$HOME/dev/rails/infinum/student-academy/2018
+
+  # main
+  tmux new-session -s $SESSION -n src -d
+  tmux send-keys -t $SESSION:1 "cd $PROJECT" C-m
+fi
+
+tmux attach -t $SESSION

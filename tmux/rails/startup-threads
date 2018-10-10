@@ -8,13 +8,13 @@ SESSION=rails-startup-threads
 tmux has-session -t $SESSION
 if [ $? != 0 ]
 then
-  PROJECT=$HOME/dev/rails/infinum/startup-threads
+  PROJECT=$HOME/dev/rails/infinum/threads
 
   # src
   tmux new-session -s $SESSION -n src -d
   tmux send-keys -t $SESSION:1 "cd $PROJECT" C-m
 
-  # client 
+  # client
   tmux new-window -n client -t $SESSION
   tmux send-keys -t $SESSION:2 "cd $PROJECT/app/assets/javascripts/threads" C-m
 

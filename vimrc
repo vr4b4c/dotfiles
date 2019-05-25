@@ -40,6 +40,7 @@ let mapleader = " "
 set list listchars=tab:»·,trail:·,nbsp:·
 
 " config
+source $HOME/.vim/settings/config/cursor.vim
 source $HOME/.vim/settings/config/filetype.vim
 source $HOME/.vim/settings/config/tmux.vim
 source $HOME/.vim/settings/config/key-mappings.vim

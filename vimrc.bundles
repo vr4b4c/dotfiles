@@ -22,7 +22,7 @@ call plug#begin('~/.vim/bundle')
 " vim-markdown-preview
 Plug 'mileszs/ack.vim'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
 Plug 'tomtom/tlib_vim'
 Plug 'edkolev/tmuxline.vim'
 Plug 'MarcWeber/vim-addon-mw-utils'

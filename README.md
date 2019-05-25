@@ -4,6 +4,7 @@
 brew install rcup
 git clone git@github.com:vr4b4c/dotfiles.git ~/dotfiles
 env RCRC=$HOME/dotfiles/rcrc rcup
+brew bundle
 ```
 ## TODO
  - Heroku Toolbelt
@@ -45,6 +46,12 @@ rbenv default gems
   - Keyboard speed
     System Preferences > Keyboard > Key repeat > Slide to Fast
     System Preferences > Keyboard > Delay until repeat > Slide to Short
+
+## Backup
+  - Export Brew bundle
+```
+brew bundle dump
+```
 
 After:
   - export Postico connections

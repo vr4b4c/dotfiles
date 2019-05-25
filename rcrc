@@ -2,3 +2,4 @@
 
 EXCLUDES="README.md"
 DOTFILES_DIRS="$HOME/dotfiles"
+UNDOTTED="Brewfile"

@@ -8,11 +8,21 @@ SESSION=infinum-academy
 tmux has-session -t $SESSION
 if [ $? != 0 ]
 then
-  PROJECT=$HOME/dev/rails/infinum/student-academy/2018
+  PROJECT=$HOME/dev/rails/infinum/student-academy
 
-  # main
-  tmux new-session -s $SESSION -n src -d
-  tmux send-keys -t $SESSION:1 "cd $PROJECT" C-m
+  # current
+  tmux new-session -s $SESSION -n current -d
+  tmux send-keys -t $SESSION:1 "cd $PROJECT/current" C-m
+
+  # prev
+  tmux new-window -n lecturer-specs -t $SESSION
+  tmux send-keys -t $SESSION:2 "cd $PROJECT/lecturer-specs" C-m
+
+  # prev
+  tmux new-window -n prev -t $SESSION
+  tmux send-keys -t $SESSION:3 "cd $PROJECT/old/2018" C-m
+
+  tmux select-window -t $SESSION:1
 fi
 
 tmux attach -t $SESSION

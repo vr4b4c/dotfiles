@@ -1,25 +1,22 @@
 # Install
 
 ```bash
-brew install rcup
+# Run script from https://brew.sh
+brew install thoughtbot/formulae/rcm
+brew install git
+# transfer .ssh config and keys
 git clone git@github.com:vr4b4c/dotfiles.git ~/dotfiles
-env RCRC=$HOME/dotfiles/rcrc rcup
+RCRC=$HOME/dotfiles/rcrc rcup
 brew bundle
 ```
 ## TODO
  - Heroku Toolbelt
 
 ## Software
-Homebrew
-  - Run script from https://brew.sh
 Postico
   - Download and install
-Slack
-  - Download and install
 Spectacle
-  - Download and install
 SourceTree
-  - Download and install
 asdf
   - https://github.com/asdf-vm/asdf#setup
 Croatian-US-mac keyboard
@@ -50,7 +47,7 @@ rbenv default gems
 ## Backup
   - Export Brew bundle
 ```
-brew bundle dump
+brew bundle dump --force
 ```
 
 After:

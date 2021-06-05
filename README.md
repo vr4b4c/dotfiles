@@ -13,16 +13,11 @@ brew bundle
  - Heroku Toolbelt
 
 ## Software
-Postico
-  - Download and install
-Spectacle
-SourceTree
-asdf
-  - https://github.com/asdf-vm/asdf#setup
-Croatian-US-mac keyboard
-  - https://github.com/kost/Croatian-US-mac#installation
-rbenv default gems
-  - https://github.com/rbenv/rbenv-default-gems#installation
+- [Postico](https://eggerapps.at/postico/)
+- [Rectangle](http://rectangleapp.com)
+- [Authy desktop](https://authy.com/download/)
+- [asdf](https://github.com/asdf-vm/asdf#setup)
+- [Croatian-US-mac keyboard](https://github.com/kost/Croatian-US-mac#installation)
 
 ## Operations
   - Mute sound on terminal

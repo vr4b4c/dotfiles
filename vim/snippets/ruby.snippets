@@ -1,8 +1,19 @@
-# Rspec snippets
-snippet rdesc
-	RSpec.describe ${1:`substitute(substitute(vim_snippets#Filename(), '_spec$', '', ''), '\(_\|^\)\(.\)', '\u\2', 'g')`} do
-		${0}
-	end
 # Factory Girl
 snippet fgc
 	FactoryGirl.create(:${1:factory})
+
+# Rubocop
+snippet rubd
+	# rubocop:disable ${0}
+
+snippet rubd:m
+	# rubocop:disable Metrics/${0}
+
+snippet rubd:r
+	# rubocop:disable Rails/${0}
+
+snippet rubd:r/smv
+	# rubocop:disable Rails/SkipsModelValidations
+
+snippet rubd:s
+	# rubocop:disable Style/${0}

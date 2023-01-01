@@ -70,7 +70,7 @@ del ssh.tgz ssh.tgz.enc
 ```
   - Install git `brew install git`
   - Clone dotfiles: `git clone git@github.com:vr4b4c/dotfiles.git $HOME/dotfiles`
-  - Install rcm `brew install thoughtbot/formulae/rcm`
+  - Install rcm `brew install rcm`
   - Setup dotfiles: `RCRC=$HOME/dotfiles/rcrc rcup`
   - Install Brew packages `brew bundle`
   - [Install tmux plugin manager](https://github.com/tmux-plugins/tpm#installation)

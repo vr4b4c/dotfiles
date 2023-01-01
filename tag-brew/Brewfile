@@ -1,51 +1,51 @@
-tap "heroku/brew"
+# Homebrew
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
-# tap "puma/puma"
-tap "thoughtbot/formulae"
-brew "ack"
-brew "bash-completion"
-brew "coreutils"
-# brew "ctags"
-# brew "erlang"
-brew "freetds"
-# brew "fwup"
+
+# General purpose
+brew "rcm"
 brew "git"
-# brew "git-flow"
-brew "graphviz"
-brew "htop"
-brew "imagemagick"
-brew "inetutils"
-brew "lftp"
-brew "libssh2"
-brew "mysql", restart_service: true
-brew "n"
-brew "p7zip"
-brew "postgresql", restart_service: true
+brew "ack"
+brew "trash"
+brew "tree"
+brew "neovim"
+brew "asdf"
+
+# Ruby
 brew "ruby-build"
 brew "rbenv"
+
+# Tmux
 brew "reattach-to-user-namespace"
-brew "redis", restart_service: true
-brew "rmtrash"
-brew "squashfs"
-brew "the_silver_searcher"
 brew "tmux"
-brew "tree"
-brew "vim"
-brew "wget"
-brew "yarn"
-brew "heroku/brew/heroku"
-# brew "puma/puma/puma-dev"
-brew "thoughtbot/formulae/rcm"
-cask "dropbox"
-cask "firefox"
-cask "google-chrome"
-# cask "java"
+
+# Vim
+# brew "vim"
+# brew "the_silver_searcher"
+
+# Bash
+# brew "bash-completion"
+# brew "coreutils"
+
+# Cask
 cask "mysqlworkbench"
-# cask "ngrok"
+cask "google-chrome"
 cask "slack"
 cask "sublime-text"
 cask "transmission"
 cask "vlc"
+cask "iterm2"
+cask "docker"
+cask "postico"
+cask "sourcetree"
+cask "spotify"
+cask "whatsapp"
+
+# Skipped (after scanning the `brew list`):
+#  - kubernetes-cli
+#  - ripgrep
+#  - tree-sitter
+#  - lua
+#  - luajit

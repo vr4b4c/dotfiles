@@ -20,5 +20,8 @@ alias del='rmtrash'
 
 alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 
+alias today='git log --since=6am --format="* %s" --author="$(git config user.email)" --reverse -- | pbcopy'
+alias yesterday='git log --since=yesterday.6am --until=6am --format="* %s" --author="$(git config user.email)" --reverse -- | pbcopy'
+
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local

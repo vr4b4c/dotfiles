@@ -3,9 +3,9 @@
 	email = vedran.hrncic@infinum.hr
 [core]
 	excludesfile = /Users/vrabac/.gitignore
-	editor = vim
+	editor = nvim
 [push]
-  default = simple
+  default = current
 [include]
   path = ~/.gitconfig.local
 [difftool "sourcetree"]
@@ -16,3 +16,9 @@
 	trustExitCode = true
 [commit]
 	template = /Users/vrabac/.stCommitMsg
+[credential]
+	helper = osxkeychain
+[rerere]
+	enabled = false
+[init]
+	defaultBranch = main

@@ -1,3 +1,8 @@
+# Ruby
+snippet fsl
+	# frozen_string_literal: true
+	
+
 # Factory Girl
 snippet fgc
 	FactoryGirl.create(:${1:factory})
@@ -12,8 +17,17 @@ snippet rubd:m
 snippet rubd:r
 	# rubocop:disable Rails/${0}
 
+snippet rubd:r/me
+	# rubocop:disable Rails/MultipleExpectations
+
 snippet rubd:r/smv
 	# rubocop:disable Rails/SkipsModelValidations
 
 snippet rubd:s
 	# rubocop:disable Style/${0}
+
+snippet rubd:rs
+	# rubocop:disable RSpec/${0}
+
+snippet rubd:rs/el
+	# rubocop:disable RSpec/ExampleLength

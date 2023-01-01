@@ -50,12 +50,14 @@ source $HOME/.vim/settings/config/ag.vim
 source $HOME/.vim/settings/plugin/airline.vim
 source $HOME/.vim/settings/plugin/ctrlp.vim
 " source $HOME/.vim/settings/plugin/markdown-preview.vim
-source $HOME/.vim/settings/plugin/syntastic.vim
+" source $HOME/.vim/settings/plugin/syntastic.vim
 source $HOME/.vim/settings/plugin/rspec.vim
-source $HOME/.vim/settings/plugin/jsx.vim
+"source $HOME/.vim/settings/plugin/jsx.vim
 source $HOME/.vim/settings/plugin/wiki.vim
-source $HOME/.vim/settings/plugin/ruby-xmpfilter.vim
+" source $HOME/.vim/settings/plugin/ruby-xmpfilter.vim
 source $HOME/.vim/settings/plugin/neomake.vim
-source $HOME/.vim/settings/plugin/elm-vim.vim
+" source $HOME/.vim/settings/plugin/elm-vim.vim
 " source $HOME/.vim/settings/plugin/markdown.vim
 " source $HOME/.vim/vrabac/plugin/tabular.vim
+source $HOME/.vim/settings/plugin/snip-mate.vim
+source $HOME/.vim/settings/plugin/neoformat.vim

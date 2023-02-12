@@ -3,7 +3,6 @@
 ## Software
 - [Postico](https://eggerapps.at/postico/)
 - [Rectangle](http://rectangleapp.com)
-- [Authy desktop](https://authy.com/download/)
 - [asdf](https://github.com/asdf-vm/asdf#setup)
 - [Croatian-US-mac keyboard](https://github.com/kost/Croatian-US-mac#installation)
 

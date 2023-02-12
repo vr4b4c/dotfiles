@@ -29,44 +29,22 @@
     - `change font > Ubuntu Mono derivative Powerline 14 pt`
     - `(check) Text > Antialias tex`
 
-## Backup
+## Config
 Secret key for encryption is stored in `1Password > Dotfiles > DOTFILES_SECRET_KEY`
+
+## Backup
   - Export Brew bundle `brew bundle dump --force`
   - Commit and push dotfiles changes
-  - Encrypt and upload ssh keys
-```
-cd $HOME
-COPYFILE_DISABLE=1 tar -czvf ssh.tgz .ssh
-openssl aes-256-cbc -e -md md5 -in ssh.tgz -out ssh.tgz.enc -k $DOTFILES_SECRET_KEY
-# upload ssh.tgz.enc to https://www.dropbox.com/home/Private/software
-del ssh.tgz ssh.tgz.enc
-```
-  - Encrypt and upload shell secrets
-```
-cd $HOME
-openssl aes-256-cbc -e -md md5 -in .secrets -out secrets.enc -k $DOTFILES_SECRET_KEY
-# upload secrets.enc https://www.dropbox.com/home/Private/software
-del secrets.enc
-```
+  - Run `DOTFILES_SECRET_KEY= script/backup-secrets`
   - Export Postico connections
     - upload archive to [Dropbox](https://www.dropbox.com/home/Private/software/postico-connections)
 
 ## Install
   - Install [Brew](https://brew.sh)
-  - [Download](https://www.dropbox.com/home/Private/software/secrets.enc) and decrypt shell secrets
-```
-cd $HOME
-openssl aes-256-cbc -d -md md5 -in secrets.enc -out .secrets -k $DOTFILES_SECRET_KEY
-del secrets.enc
-```
-  - [Download](https://www.dropbox.com/home/Private/software/ssh.tgz.enc) and decrypt ssh keys
-```
-cd $HOME
-openssl aes-256-cbc -d -md md5 -in ssh.tgz.enc -out ssh.tgz -k $DOTFILES_SECRET_KEY
-tar -xzvf ssh.tgz
-mv ssh .ssh
-del ssh.tgz ssh.tgz.enc
-```
+  - [Download](https://github.com/vr4b4c/dotfiles) dotfiles as .zip and unzip
+  - Change into dotfiles directory
+  - Read secret key for encryption from `1Password > Dotfiles > DOTFILES_SECRET_KEY`
+  - Run `DOTFILES_SECRET_KEY= script/restore-secrets`
   - Install git `brew install git`
   - Clone dotfiles: `git clone git@github.com:vr4b4c/dotfiles.git $HOME/dotfiles`
   - Install rcm `brew install rcm`

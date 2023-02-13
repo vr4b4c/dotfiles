@@ -29,6 +29,12 @@ brew "tmux"
 # brew "bash-completion"
 # brew "coreutils"
 
+# neovim
+#   telescope
+brew "ripgrep"
+#   neovim :checkhealth listed this as a warning for telescope
+# brew "fd"
+
 # Cask
 cask "mysqlworkbench"
 cask "google-chrome"
@@ -47,7 +53,6 @@ cask "rectangle"
 
 # Skipped (after scanning the `brew list`):
 #  - kubernetes-cli
-#  - ripgrep
 #  - tree-sitter
 #  - lua
 #  - luajit

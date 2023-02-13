@@ -66,15 +66,15 @@ lspconfig.tsserver.setup({
   flags = lsp_flags,
 })
 
-lspconfig.solargraph.setup({
-  capabilities = capabilities,
-  on_attach = on_attach,
-  flags = lsp_flags,
-})
+-- lspconfig.solargraph.setup({
+--   capabilities = capabilities,
+--   on_attach = on_attach,
+--   flags = lsp_flags,
+-- })
 
-lspconfig.elixirls.setup({
-  cmd = { "/usr/local/bin/elixir-ls/language_server.sh" };
-  capabilities = capabilities,
-  on_attach = on_attach,
-  flags = lsp_flags,
-})
+-- lspconfig.elixirls.setup({
+--   cmd = { "/usr/local/bin/elixir-ls/language_server.sh" };
+--   capabilities = capabilities,
+--   on_attach = on_attach,
+--   flags = lsp_flags,
+-- })

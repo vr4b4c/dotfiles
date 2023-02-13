@@ -18,6 +18,9 @@ return require('packer').startup(function(use)
   use({
     'glepnir/lspsaga.nvim',
     branch = 'main',
+    config = function()
+        require("lspsaga").setup({})
+    end,
   })
   use({
     'nvim-treesitter/nvim-treesitter',

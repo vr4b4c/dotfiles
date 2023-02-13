@@ -42,6 +42,8 @@ cask "postico"
 cask "sourcetree"
 cask "spotify"
 cask "whatsapp"
+cask "iterm2"
+cask "rectangle"
 
 # Skipped (after scanning the `brew list`):
 #  - kubernetes-cli

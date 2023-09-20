@@ -1,6 +1,5 @@
 ---
 BUNDLE_DISABLE_LOCAL_BRANCH_CHECK: "true"
-BUNDLE_LOCAL__USFM_TRANSFORMER: "/Users/vrabac/dev/ruby/infinum/usfm_transformer"
 BUNDLE_GEM__TEST: "rspec"
 BUNDLE_GEM__MIT: "false"
 BUNDLE_GEM__COC: "true"
@@ -9,3 +8,4 @@ BUNDLE_BUILD__EVENTMACHINE: "--with-cppflags=-I/usr/local/opt/openssl/include"
 BUNDLE_GEM__CI: "github"
 BUNDLE_GEM__CHANGELOG: "false"
 BUNDLE_GEM__LINTER: "rubocop"
+BUNDLE_BUILD__PG: "--with-pg-config=/opt/homebrew/opt/libpq/bin/pg_config"

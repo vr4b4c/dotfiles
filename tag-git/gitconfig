@@ -22,3 +22,5 @@
 	enabled = false
 [init]
 	defaultBranch = main
+[url "https://vr4b4c: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@github.com/Bird-Buddy"]
+	insteadOf = https://github.com/Bird-Buddy

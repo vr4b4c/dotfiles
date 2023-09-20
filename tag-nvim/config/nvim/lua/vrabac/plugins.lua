@@ -15,12 +15,9 @@ return require('packer').startup(function(use)
   use('hrsh7th/nvim-cmp')
   use('L3MON4D3/LuaSnip')
   use('saadparwaiz1/cmp_luasnip')
-  use({
-    'glepnir/lspsaga.nvim',
-    branch = 'main',
-    config = function()
-      require("lspsaga").setup({})
-    end,
+  use ({
+    'nvimdev/lspsaga.nvim',
+    after = 'nvim-lspconfig',
   })
   use({
     'nvim-treesitter/nvim-treesitter',
@@ -54,4 +51,13 @@ return require('packer').startup(function(use)
   use('jparise/vim-graphql')
   use('onsails/lspkind.nvim')
   use('lewis6991/gitsigns.nvim')
+  use {
+    'nvim-neotest/neotest',
+    requires = {
+      'nvim-lua/plenary.nvim',
+      'nvim-treesitter/nvim-treesitter',
+      'antoinemadec/FixCursorHold.nvim',
+      'olimorris/neotest-rspec'
+    }
+  }
 end)

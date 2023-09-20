@@ -1,12 +1,19 @@
 local keymap = vim.keymap.set
-local saga = require('lspsaga')
+ require("lspsaga").setup({
+    finder = {
+      keys = {
+        vsplit = 'v',
+        split = 'x'
+      }
+    }
+ })
 
 -- Lsp finder find the symbol definition implement reference
 -- if there is no implement it will hide
 -- when you use action in finder like open vsplit then you can
 -- use <C-t> to jump back
 -- KeyMap: <leader>lf launch LSP finder
-keymap("n", "<leader>lf", "<cmd>Lspsaga lsp_finder<CR>", { silent = true })
+keymap("n", "<leader>lf", "<cmd>Lspsaga finder<CR>", { silent = true })
 
 -- KeyMap: <leader>lca launch LSP code action
 keymap({"n","v"}, "<leader>lca", "<cmd>Lspsaga code_action<CR>", { silent = true })

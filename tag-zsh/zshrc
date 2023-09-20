@@ -111,7 +111,14 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
+alias vi="nvim"
 alias vim="nvim"
+alias rm="echo use del"
+alias del='trash'
+alias be='bundle exec'
+alias gui='gitui'
+alias lg='lazygit'
+alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 
 # RCRC
 export RCRC=$HOME/dotfiles/rcrc
@@ -119,6 +126,9 @@ export RCRC=$HOME/dotfiles/rcrc
 # SSH agent
 eval `ssh-agent -s` > /dev/null
 for identity in $HOME/.ssh/*_rsa; do
+  ssh-add $identity > /dev/null 2>&1
+done
+for identity in $HOME/.ssh/*-ed25519; do
   ssh-add $identity > /dev/null 2>&1
 done
 
@@ -129,11 +139,16 @@ done
 export VAULT_ADDR=https://vault.infinum.co:8200
 export VAULT_AUTH_METHOD=github
 
-# Bundler
-export EDITOR=vim
-export BUNDLER_EDITOR=vim
+# Ruby Bundler
+export EDITOR=nvim
+export BUNDLER_EDITOR=nvim
 
 source $HOME/.secrets
+
+# BirdBuddy
+export WORKSPACE_FEATURE_MIRRORD=true
+
+PATH="$HOMEBREW_PREFIX/opt/make/libexec/gnubin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

@@ -5,11 +5,13 @@ local event = "BufWritePre" -- or "BufWritePost"
 local async = event == "BufWritePost"
 
 null_ls.setup({
+  debug = true,
   sources = {
+    null_ls.builtins.formatting.rubocop,
     -- https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTIN_CONFIG.md#arguments
-    null_ls.builtins.diagnostics.credo.with({
-      extra_args = { '--strict' }
-    }),
+    -- null_ls.builtins.diagnostics.credo.with({
+    --   extra_args = { '--strict' }
+    -- }),
   },
   on_attach = function(client, bufnr)
     if client.supports_method("textDocument/formatting") then

@@ -4,4 +4,4 @@ EXCLUDES="README.md script"
 DOTFILES_DIRS="$HOME/dotfiles"
 UNDOTTED="Brewfile"
 # bash vim
-TAGS="asdf brew git nvim ruby tmux vim zsh"
+TAGS="asdf brew git nvim ruby tmux zsh"

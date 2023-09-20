@@ -31,6 +31,7 @@ Secret key for encryption is stored in `1Password > Dotfiles > DOTFILES_SECRET_K
   - Keyboard speed
     - `System Preferences > Keyboard > Key repeat > Slide to Fast`
     - `System Preferences > Keyboard > Delay until repeat > Slide to Short`
+  - Disable fn key to trigger input source change `System Preferences > Keyboard > Pres fn key to: Do Nothing`
   - Toggle auto-hide dock `Cmd + Alt + D`
 
 ### Oh my zsh

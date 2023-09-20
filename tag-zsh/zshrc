@@ -119,8 +119,6 @@ alias vim="nvim"
 alias rm="echo use del"
 alias del='trash'
 alias be='bundle exec'
-alias gui='gitui'
-alias lg='lazygit'
 alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 
 # RCRC
@@ -135,8 +133,6 @@ for identity in $HOME/.ssh/*-ed25519; do
   ssh-add $identity > /dev/null 2>&1
 done
 
-# Vim
-# stty -ixon
 
 # Vault
 export VAULT_ADDR=https://vault.infinum.co:8200
@@ -146,10 +142,4 @@ export VAULT_AUTH_METHOD=github
 export EDITOR=nvim
 export BUNDLER_EDITOR=nvim
 
-source $HOME/.secrets
-
-# BirdBuddy
-export WORKSPACE_FEATURE_MIRRORD=true
-
-PATH="$HOMEBREW_PREFIX/opt/make/libexec/gnubin:$PATH"
-
+[ -f $HOME/.secrets ] && source $HOME/.secrets

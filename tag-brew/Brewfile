@@ -35,7 +35,9 @@ brew "ripgrep"
 # brew "fd"
 
 # oh-my-zsh
+brew "zsh-autosuggestions"
 brew "powerlevel10k"
+
 # Cask
 cask "mysqlworkbench"
 cask "google-chrome"

@@ -84,11 +84,11 @@ plugins=(
   git
   asdf
   rbenv
-  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
 source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # User configuration
 

@@ -1,26 +1,16 @@
 [user]
 	name = Vedran Hrncic
-	email = vedran.hrncic@infinum.hr
+	email = vedran.hrncic@gmail.com
 [core]
-	excludesfile = /Users/vrabac/.gitignore
+	excludesfile = ~/.gitignore
 	editor = nvim
 [push]
   default = current
 [include]
   path = ~/.gitconfig.local
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-[commit]
-	template = /Users/vrabac/.stCommitMsg
 [credential]
 	helper = osxkeychain
 [rerere]
 	enabled = false
 [init]
 	defaultBranch = main
-[url "https://vr4b4c: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@github.com/Bird-Buddy"]
-	insteadOf = https://github.com/Bird-Buddy

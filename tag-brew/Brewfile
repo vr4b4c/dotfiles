@@ -11,6 +11,7 @@ brew "ack"
 brew "tree"
 brew "neovim"
 brew "asdf"
+brew "macos-trash"
 
 # Ruby
 brew "ruby-build"
@@ -39,10 +40,8 @@ brew "zsh-autosuggestions"
 brew "powerlevel10k"
 
 # Cask
-cask "mysqlworkbench"
 cask "google-chrome"
 cask "slack"
-cask "sublime-text"
 cask "transmission"
 cask "vlc"
 cask "iterm2"
@@ -51,7 +50,6 @@ cask "postico"
 cask "sourcetree"
 cask "spotify"
 cask "whatsapp"
-cask "iterm2"
 cask "rectangle"
 
 # Skipped (after scanning the `brew list`):

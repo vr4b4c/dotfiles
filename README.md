@@ -1,34 +1,5 @@
 # Dotfiles
 
-## Software
-- [Postico](https://eggerapps.at/postico/)
-- [Rectangle](http://rectangleapp.com)
-- [asdf](https://github.com/asdf-vm/asdf#setup)
-- [Croatian-US-mac keyboard](https://github.com/kost/Croatian-US-mac#installation)
-
-## Customizations
-
-### OSX
-  - Mute sound on terminal
-    - `Terminal > Preferences > Profiles > Advanced > (uncheck) Audible bell & Visual Bell`
-  - Dock on the left
-    - `System Preferences > Dock > Position on screen > Left`
-  - Inverse mouse scroll
-    - `System Preferences > Trackpad > Scroll & Zoom > (uncheck) Scroll Direction: Natural`
-  - Keyboard speed
-    - `System Preferences > Keyboard > Key repeat > Slide to Fast`
-    - `System Preferences > Keyboard > Delay until repeat > Slide to Short`
-  - Toggle auto-hide dock `Cmd + Alt + D`
-
-### OSX + Vim + Powerline fonts
-  - Powerline fonts
-    clone fonts from [powerline repo](https://github.com/powerline/fonts)
-    run `./install.sh`
-  - Setup terminal color, transparency
-    - `duplicate Pro and name Pro Vrabac`
-    - `change font > Ubuntu Mono derivative Powerline 14 pt`
-    - `(check) Text > Antialias tex`
-
 ## Config
 Secret key for encryption is stored in `1Password > Dotfiles > DOTFILES_SECRET_KEY`
 
@@ -50,18 +21,35 @@ Secret key for encryption is stored in `1Password > Dotfiles > DOTFILES_SECRET_K
   - Install rcm `brew install rcm`
   - Setup dotfiles: `RCRC=$HOME/dotfiles/rcrc rcup`
   - Install Brew packages `brew bundle`
-    - `Cmd + Space` and search <cask> to install it
+    - `Cmd + Space` and search `cask` to install it
+
+### OSX
+  - Dock on the left
+    - `System Preferences > Dock > Position on screen > Left`
+  - Inverse mouse scroll
+    - `System Preferences > Trackpad > Scroll & Zoom > (uncheck) Scroll Direction: Natural`
+  - Keyboard speed
+    - `System Preferences > Keyboard > Key repeat > Slide to Fast`
+    - `System Preferences > Keyboard > Delay until repeat > Slide to Short`
+  - Toggle auto-hide dock `Cmd + Alt + D`
 
 ### Oh my zsh
   - Installation [instructions](https://ohmyz.sh/#install)
-  - Install [autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
-  - Install [powerlevel10k](https://github.com/romkatv/powerlevel10k#oh-my-zsh)
-  - Run `p10k configure`
 
 ### iTerm2
   - Download and install [tokyo nights storm theme](https://github.com/folke/tokyonight.nvim/blob/main/extras/iterm/tokyonight_storm.itermcolors)
   - Select theme in `iterm2 > Settings > Profiles > Colors > Color presets > tokyonight_storm`
-  - Set `iterm2 > Settings > Profiles > Window > Transparency` to 10
+  - Set transparency `iterm2 > Settings > Profiles > Window > Transparency = 10`
+  - Allow clipboard usage `iterm2 > Settings > General > Selection > (check) Applications in terminal may access clipboard`
+  - Mute sound `iterm2 > Settings > Profiles > Default > Terminal > (check) Silence bell`
+
+### Rectangle
+  - Start on login `Rectangle > Preferences... > System (3rd tab) > (check) Launch on login`
+
+### Croatian/US keyboard for Mac
+  - Instalation [instructions](https://github.com/kost/Croatian-US-mac#installation)
+  - Restart the machine for the layout to be registered with the systemselect
+  - Select the new layout (listed under `Others`)
 
 ### Tmux
   - Install [tmux plugin manager](https://github.com/tmux-plugins/tpm#installation)
@@ -75,6 +63,6 @@ Secret key for encryption is stored in `1Password > Dotfiles > DOTFILES_SECRET_K
     - Install nodejs plugin `asdf plugin add nodejs`
     - Install default nodejs version `asdf install nodejs X.Y.Z`
     - [tsserver](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#tsserver)
-  - TODO: something is wrong with LSP (some keymaps aren't working)
-  - Import Postico connections
-  - TODO: bootstrap cask apps from Brewfile
+
+# TODO:
+  - import Postico connections

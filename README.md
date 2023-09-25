@@ -33,6 +33,8 @@ Secret key for encryption is stored in `1Password > Dotfiles > DOTFILES_SECRET_K
     - `System Preferences > Keyboard > Delay until repeat > Slide to Short`
   - Disable fn key to trigger input source change `System Preferences > Keyboard > Pres fn key to: Do Nothing`
   - Toggle auto-hide dock `Cmd + Alt + D`
+  - Add second virtual Desktop `^ + arrow up` clik on the `+` icon on the right side
+  - Switch to Desktop N `System Preferences > Keyboard > Keybboard Shortcuts... > Mission Control > Mission Control > (check) Switch to Desktop N`
 
 ### Oh my zsh
   - Installation [instructions](https://ohmyz.sh/#install)

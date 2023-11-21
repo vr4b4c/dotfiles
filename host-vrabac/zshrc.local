@@ -1,0 +1,8 @@
+# SSH config
+for identity in $HOME/.ssh/*_rsa; do
+  ssh-add $identity > /dev/null 2>&1
+done
+
+# Vault
+export VAULT_ADDR=https://vault.infinum.co:8200
+export VAULT_AUTH_METHOD=github

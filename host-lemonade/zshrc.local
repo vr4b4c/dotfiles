@@ -1,0 +1,11 @@
+# SSH config
+for identity in $HOME/.ssh/*_ed25519; do
+  ssh-add $identity > /dev/null 2>&1
+done
+
+# Dev tools
+source ~/Lemonade/devops/dev/.lemonade_init.sh
+alias t=/usr/local/bin/tenvctl
+source <(t comp)
+export T_SLACK_USER_ID="U05SX5R1WBD"
+export T_ENV_ID="t-vedranhrncic"

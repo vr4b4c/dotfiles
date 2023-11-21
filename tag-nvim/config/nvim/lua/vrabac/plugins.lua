@@ -24,10 +24,6 @@ return require('packer').startup(function(use)
     run = ':TSUpdate',
   })
   use({
-    'MunifTanjim/prettier.nvim',
-    requires = { 'jose-elias-alvarez/null-ls.nvim' }
-  })
-  use({
     'folke/trouble.nvim',
     requires = { 'kyazdani42/nvim-web-devicons' }
   })

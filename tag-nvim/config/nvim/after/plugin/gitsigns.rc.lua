@@ -30,17 +30,17 @@ gitsigns.setup({
     -- KeyMap: <leader>gr Gitsigns reset hunk
     map({'n', 'v'}, '<leader>gr', ':Gitsigns reset_hunk<CR>')
 
-    -- KeyMap: <leader>gS Gitsigns stage buffer
+    -- KeyMap: <leader>gS Gitsigns stage buffer 
     map('n', '<leader>gS', gs.stage_buffer)
 
     -- KeyMap: <leader>gu Gitsigns undo stage hunk
     map('n', '<leader>gu', gs.undo_stage_hunk)
 
-    -- KeyMap: <leader>gR Gitsigns reset buffer
-    map('n', '<leader>gR', gs.reset_buffer)
+    -- KeyMap: <leader>gR Gitsigns reset buffer # disabled, seems dangerous
+    -- map('n', '<leader>gR', gs.reset_buffer)
 
-    -- KeyMap: <leader>gp Gitsigns preview hunk
-    map('n', '<leader>gp', gs.preview_hunk)
+    -- KeyMap: <leader>gP Gitsigns preview hunk
+    map('n', '<leader>gP', gs.preview_hunk)
 
     -- KeyMap: <leader>gb Gitsigns blame line
     map('n', '<leader>gb', function() gs.blame_line{full=true} end)
@@ -56,6 +56,15 @@ gitsigns.setup({
 
     -- KeyMap: <leader>gtd Gitsigns toggle deleted
     map('n', '<leader>td', gs.toggle_deleted)
+
+    -- KeyMap: <leader>gtd Gitsigns toggle deleted
+    map('n', '<leader>td', gs.toggle_deleted)
+
+    -- KeyMap: <leader>gp Gitsigns previous hunk
+    map('n', '<leader>gp', gs.prev_hunk)
+
+    -- KeyMap: <leader>gn Gitsigns next hunk
+    map('n', '<leader>gn', gs.next_hunk)
 
     -- Text object
     map({'o', 'x'}, 'ih', ':<C-U>Gitsigns select_hunk<CR>')

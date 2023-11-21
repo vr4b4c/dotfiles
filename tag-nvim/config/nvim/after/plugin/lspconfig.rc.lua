@@ -58,14 +58,14 @@ local lsp_flags = {
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-lspconfig.tsserver.setup({
-  capabilities = capabilities,
-  on_attach = function(client, bufnr)
-    on_attach(client, bufnr)
-    enable_format_on_save(client, bufnr)
-  end,
-  flags = lsp_flags,
-})
+-- lspconfig.tsserver.setup({
+--   capabilities = capabilities,
+--   on_attach = function(client, bufnr)
+--     on_attach(client, bufnr)
+--     enable_format_on_save(client, bufnr, "tsserver")
+--   end,
+--   flags = lsp_flags,
+-- })
 
 lspconfig.solargraph.setup({
   cmd = { "bundle", "exec", "solargraph", "stdio" },

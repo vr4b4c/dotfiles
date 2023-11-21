@@ -80,3 +80,12 @@ lspconfig.solargraph.setup({
 --   on_attach = on_attach,
 --   flags = lsp_flags,
 -- })
+
+lspconfig.syntax_tree.setup({
+  capabilities = capabilities,
+  on_attach = function(client, bufnr)
+    on_attach(client, bufnr)
+    enable_format_on_save(client, bufnr, "syntax_tree")
+  end,
+  flags = lsp_flags,
+})

@@ -27,15 +27,10 @@ return require('packer').startup(function(use)
     'folke/trouble.nvim',
     requires = { 'kyazdani42/nvim-web-devicons' }
   })
+
   -- themes
   use('folke/tokyonight.nvim')
 
-  -- Neosolarized
-  -- use({
-  --   'svrana/neosolarized.nvim',
-  --   requires = { 'tjdevries/colorbuddy.nvim' }
-  -- })
-  
   -- dev stuff
   use('tpope/vim-commentary')
   use('christoomey/vim-tmux-navigator')

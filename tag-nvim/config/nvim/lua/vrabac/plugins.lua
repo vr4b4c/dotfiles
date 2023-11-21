@@ -30,9 +30,6 @@ return require('packer').startup(function(use)
   -- themes
   use('folke/tokyonight.nvim')
 
-  -- Nightfox
-  -- use('EdenEast/nightfox.nvim')
-
   -- Neosolarized
   -- use({
   --   'svrana/neosolarized.nvim',

@@ -1,12 +1,13 @@
 local lspconfig = require('lspconfig')
 
-local augroup_format = vim.api.nvim_create_augroup("Format", { clear = true })
-local enable_format_on_save = function(_, bufnr)
+local augroup_format = vim.api.nvim_create_augroup("lspconfig-format-on-save", { clear = true })
+local enable_format_on_save = function(_, bufnr, server)
   vim.api.nvim_clear_autocmds({ group = augroup_format, buffer = bufnr })
   vim.api.nvim_create_autocmd("BufWritePre", {
     group = augroup_format,
     buffer = bufnr,
     callback = function()
+      print(string.format("[lspconfig:%s] Format on save", server))
       vim.lsp.buf.format({ bufnr = bufnr })
     end,
   })

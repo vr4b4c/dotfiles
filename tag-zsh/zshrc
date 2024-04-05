@@ -119,7 +119,6 @@ alias vim="nvim"
 alias rm="echo use del"
 alias del='trash'
 alias be='bundle exec'
-alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 
 # RCRC
 export RCRC=$HOME/dotfiles/rcrc

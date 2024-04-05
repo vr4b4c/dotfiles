@@ -1,8 +1,12 @@
 local tokyonight = require('tokyonight')
 
 tokyonight.setup({
+  -- dark mode
   style = 'storm',
   transparent = true,
+  -- light mode
+  -- style = 'day',
+  -- transparent = false,
   styles = {
     -- Style to be applied to different syntax groups
     -- Value is any valid attr-list value for `:help nvim_set_hl`

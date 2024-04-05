@@ -126,6 +126,8 @@ export RCRC=$HOME/dotfiles/rcrc
 # SSH agent
 eval `ssh-agent -s` > /dev/null
 
+export VAULT_AUTH_METHOD=github
+
 # Ruby Bundler
 export EDITOR=nvim
 export BUNDLER_EDITOR=nvim

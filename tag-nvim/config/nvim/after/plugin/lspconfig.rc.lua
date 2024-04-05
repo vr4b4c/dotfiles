@@ -70,7 +70,10 @@ lspconfig.tsserver.setup({
 lspconfig.solargraph.setup({
   cmd = { "bundle", "exec", "solargraph", "stdio" },
   capabilities = capabilities,
-  on_attach = on_attach,
+  on_attach = function(client, bufnr)
+    on_attach(client, bufnr)
+    enable_format_on_save(client, bufnr, "solargraph")
+  end,
   flags = lsp_flags,
 })
 

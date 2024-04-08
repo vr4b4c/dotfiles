@@ -6,8 +6,9 @@ for identity in $HOME/.ssh/*_ed25519; do
 done
 
 # Dev tools
-source ~/Lemonade/devops/dev/.lemonade_init.sh
+source ~/dev/devops/dev/.lemonade_init.sh
 alias t=/usr/local/bin/tenvctl
 source <(t comp)
 export T_SLACK_USER_ID="U05SX5R1WBD"
 export T_ENV_ID="t-vedranhrncic"
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"

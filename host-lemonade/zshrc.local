@@ -1,3 +1,5 @@
+export V_HOST=lemonade
+
 # SSH config
 for identity in $HOME/.ssh/*_ed25519; do
   ssh-add $identity > /dev/null 2>&1

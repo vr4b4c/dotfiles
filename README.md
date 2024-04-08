@@ -19,7 +19,7 @@ Secret key for encryption is stored in `1Password > Dotfiles > DOTFILES_SECRET_K
   - Install git `brew install git`
   - Clone dotfiles: `git clone git@github.com:vr4b4c/dotfiles.git $HOME/dotfiles`
   - Install rcm `brew install rcm`
-  - Decide which hostname to use (`-B` switch in the next command)
+  - Decide which hostname to use (supported hostnames are `host-*` directories, `-B` switch in the next command)
   - Setup dotfiles: `RCRC=$HOME/dotfiles/rcrc rcup -B vrabac`
   - Install Brew packages `brew bundle`
     - `Cmd + Space` and search `cask` to install it

@@ -13,4 +13,13 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("vrabac/plugins")
+local plugins = {{ import = "vrabac/plugins" }}
+
+-- Add host specific plugins
+local host_plugin_dir = 'vrabac/host/' .. os.getenv('V_HOST')
+local abs_host_plugin_dir = vim.fn.stdpath("config") .. '/lua/' .. host_plugin_dir
+if vim.fn.isdirectory(abs_host_plugin_dir) then
+  plugin_dirs = table.insert(plugins, { import = host_dir })
+end
+
+require("lazy").setup(plugins)

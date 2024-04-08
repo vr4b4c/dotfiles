@@ -1,3 +1,5 @@
+export V_HOST=vrabac
+
 # SSH config
 for identity in $HOME/.ssh/*_rsa; do
   ssh-add $identity > /dev/null 2>&1

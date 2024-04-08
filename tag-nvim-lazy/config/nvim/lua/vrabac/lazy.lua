@@ -20,8 +20,8 @@ local host = os.getenv('V_HOST')
 if host then
   local host_plugin_dir = 'vrabac/host/' .. host
   local abs_host_plugin_dir = vim.fn.stdpath("config") .. '/lua/' .. host_plugin_dir
-  if vim.fn.isdirectory(abs_host_plugin_dir) then
-    plugin_dirs = table.insert(plugins, { import = host_dir })
+  if vim.fn.isdirectory(abs_host_plugin_dir) == 1 then
+    table.insert(plugins, { import = host_plugin_dir })
   end
 end
 

@@ -1,5 +1,5 @@
 local keymap = vim.keymap.set
- require("lspsaga").setup({
+require("lspsaga").setup({
     finder = {
       keys = {
         vsplit = 'v',

@@ -5,7 +5,7 @@ return require('packer').startup(function(use)
   use('neovim/nvim-lspconfig')
   -- requires system dep [ripgrep](https://github.com/nvim-telescope/telescope.nvim#suggested-dependencies)
   use({
-    'nvim-telescope/telescope.nvim', tag = '0.1.0',
+    'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
   })
   use('hrsh7th/cmp-nvim-lsp')

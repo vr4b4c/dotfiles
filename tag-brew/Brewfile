@@ -21,10 +21,6 @@ brew "rbenv"
 brew "reattach-to-user-namespace"
 brew "tmux"
 
-# Vim
-# brew "vim"
-# brew "the_silver_searcher"
-
 # Bash
 # brew "bash-completion"
 # brew "coreutils"
@@ -35,8 +31,12 @@ brew "ripgrep"
 
 # Lua
 brew "lua-language-server"
+brew "stylua"
+
 # Bash
 brew "bash-language-server"
+brew "shellcheck"
+
 #   neovim :checkhealth listed this as a warning for telescope
 # brew "fd"
 

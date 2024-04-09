@@ -32,7 +32,11 @@ brew "tmux"
 # neovim
 #   telescope
 brew "ripgrep"
+
+# Lua
 brew "lua-language-server"
+# Bash
+brew "bash-language-server"
 #   neovim :checkhealth listed this as a warning for telescope
 # brew "fd"
 

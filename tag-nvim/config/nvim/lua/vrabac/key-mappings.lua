@@ -1,15 +1,18 @@
+local keymap = vim.keymap
+local opts = { noremap = true, silent = true }
+
 -- Use ctrl-[hjkl] to select the active split!
 -- KeyMap: <C-k> select split above
-vim.api.nvim_set_keymap("n", "<C-k>", ":wincmd k<CR>", { noremap = true, silent = true })
+keymap.set("n", "<C-k>", ":wincmd k<CR>", opts)
 -- KeyMap: <C-j> select split below
-vim.api.nvim_set_keymap("n", "<C-j>", ":wincmd j<CR>", { noremap = true, silent = true })
+keymap.set("n", "<C-j>", ":wincmd j<CR>", opts)
 -- KeyMap: <C-h> select split to the left
-vim.api.nvim_set_keymap("n", "<C-h>", ":wincmd h<CR>", { noremap = true, silent = true })
+keymap.set("n", "<C-h>", ":wincmd h<CR>", opts)
 -- KeyMap: <C-l> select split to the right
-vim.api.nvim_set_keymap("n", "<C-l>", ":wincmd l<CR>", { noremap = true, silent = true })
+keymap.set("n", "<C-l>", ":wincmd l<CR>", opts)
 
-vim.api.nvim_set_keymap("n", "<Space>", ":nohlsearch<Bar>:echo<CR>", { noremap = true, silent = true })
-
+-- KeyMap: <Space> reset search highlights
+keymap.set("n", "<Space>", ":nohlsearch<Bar>:echo<CR>", opts)
 -- redraw!
 -- nnoremap <leader>r :redraw!<cr>
 

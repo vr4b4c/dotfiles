@@ -69,3 +69,6 @@ Secret key for encryption is stored in `1Password > Dotfiles > DOTFILES_SECRET_K
     - [tsserver](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#tsserver)
 
 # TODO:
+  - add contribution guide (and document dev setup)
+  - an idea, add wiki for common tasks, problems, ...
+    - how to install brew package and have it automatically added to Brewfile

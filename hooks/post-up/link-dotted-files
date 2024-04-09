@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if ! [ -f "$HOME/.config/nvim/.luarc.json" ]; then
+if ! [ -f $HOME/.config/nvim/.luarc.json ]; then
   ln -s "$HOME/dotfiles/tag-nvim-lazy/config/nvim/.luarc.json" "$HOME/.config/nvim/.luarc.json"
 fi
 

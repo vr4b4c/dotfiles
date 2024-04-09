@@ -1,2 +1,0 @@
-" set cursorline
-" set cursorcolumn

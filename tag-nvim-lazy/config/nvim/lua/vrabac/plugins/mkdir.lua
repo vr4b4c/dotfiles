@@ -1,3 +1,3 @@
 return {
-  'pbrisbin/vim-mkdir'
+  "pbrisbin/vim-mkdir",
 }

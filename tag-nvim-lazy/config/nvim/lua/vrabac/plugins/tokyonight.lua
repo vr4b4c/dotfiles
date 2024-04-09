@@ -1,11 +1,11 @@
 return {
-  'folke/tokyonight.nvim',
+  "folke/tokyonight.nvim",
   lazy = false,
   priority = 1000,
   config = function()
-    require('tokyonight').setup({
+    require("tokyonight").setup({
       -- dark mode
-      style = 'storm',
+      style = "storm",
       transparent = true,
       -- light mode
       -- style = 'day',

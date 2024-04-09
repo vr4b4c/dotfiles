@@ -6,23 +6,22 @@ Secret key for encryption is stored in `1Password > Dotfiles > DOTFILES_SECRET_K
 ## Backup
   - Export Brew bundle `brew bundle dump --force`
   - Commit and push dotfiles changes
-  - Run `DOTFILES_SECRET_KEY= script/backup-secrets.sh`
+  - Run `DOTFILES_SECRET_KEY=*** script/backup-secrets.sh`
   - Export Postico connections
     - upload archive to [Dropbox](https://www.dropbox.com/home/Private/software/postico-connections)
 
 ## Install
   - Install [Brew](https://brew.sh)
-  - [Download](https://github.com/vr4b4c/dotfiles) dotfiles as .zip and unzip
-  - Change into dotfiles directory
+  - [Download](https://github.com/vr4b4c/dotfiles) dotfiles as .zip and unzip into `~/dotfiles`
+  - `cd` into dotfiles directory
   - Read secret key for encryption from `1Password > Dotfiles > DOTFILES_SECRET_KEY`
-  - Run `DOTFILES_SECRET_KEY= script/restore-secrets.sh`
+  - Run `DOTFILES_SECRET_KEY=*** script/restore-secrets.sh`
   - Install git `brew install git`
   - Clone dotfiles: `git clone git@github.com:vr4b4c/dotfiles.git $HOME/dotfiles`
   - Install rcm `brew install rcm`
   - Decide which hostname to use (supported hostnames are `host-*` directories, `-B` switch in the next command)
   - Setup dotfiles: `RCRC=$HOME/dotfiles/rcrc rcup -B vrabac`
-  - Install Brew packages `brew bundle`
-    - `Cmd + Space` and search `cask` to install it
+  - Install Brew cask packages with `Cmd + Space`
 
 ### OSX
   - Dock on the left
@@ -61,8 +60,6 @@ Secret key for encryption is stored in `1Password > Dotfiles > DOTFILES_SECRET_K
   - Italic font [fix](https://gist.github.com/bbqtd/a4ac060d6f6b9ea6fe3aabe735aa9d95)
 
 ### Neovim
-  - Install [packer nvim](https://github.com/wbthomason/packer.nvim#quickstart)
-  - Run `nvim` and install packages with `:PackerInstall`
   - tsserver LSP system depenencies
     - Install nodejs plugin `asdf plugin add nodejs`
     - Install default nodejs version `asdf install nodejs X.Y.Z`

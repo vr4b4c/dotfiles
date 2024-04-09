@@ -72,3 +72,4 @@ Secret key for encryption is stored in `1Password > Dotfiles > DOTFILES_SECRET_K
   - add contribution guide (and document dev setup)
   - an idea, add wiki for common tasks, problems, ...
     - how to install brew package and have it automatically added to Brewfile
+  - check lua files in overcommit

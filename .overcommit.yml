@@ -1,0 +1,5 @@
+PreCommit:
+  TrailingWhitespace:
+    enabled: true
+  ShellCheck:
+    enabled: true

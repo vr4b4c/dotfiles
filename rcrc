@@ -1,6 +1,6 @@
 # vim: set ft=sh:
 
-EXCLUDES="README.md script"
+EXCLUDES="README.md script Gemfile Gemfile.lock"
 DOTFILES_DIRS="$HOME/dotfiles"
 UNDOTTED="Brewfile"
 # bash vim nvim

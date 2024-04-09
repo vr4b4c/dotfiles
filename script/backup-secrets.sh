@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
-source ./script/util
+source ./script/util.sh
 
 backup_ssh_keys() {
   print_line "Backing up SSH keys..."
 
-  cd $HOME
+  cd "$HOME" || exit
   COPYFILE_DISABLE=1 tar -czvf ssh.tgz .ssh &> /dev/null
-  openssl aes-256-cbc -e -md md5 -in ssh.tgz -out ssh.tgz.enc -k $DOTFILES_SECRET_KEY
+  openssl aes-256-cbc -e -md md5 -in ssh.tgz -out ssh.tgz.enc -k "$DOTFILES_SECRET_KEY"
 
   print_subline "Backup ssh.tgz.enc (https://www.dropbox.com/home/Private/software)"
   wait_continue 1
@@ -20,8 +20,8 @@ backup_ssh_keys() {
 backup_shell_secrets () {
   print_line "Backing up shell secrets..."
 
-  cd $HOME
-  openssl aes-256-cbc -e -md md5 -in .secrets -out secrets.enc -k $DOTFILES_SECRET_KEY
+  cd "$HOME" || exit
+  openssl aes-256-cbc -e -md md5 -in .secrets -out secrets.enc -k "$DOTFILES_SECRET_KEY"
 
   print_subline "Backup secrets.enc (https://www.dropbox.com/home/Private/software)"
   wait_continue 1

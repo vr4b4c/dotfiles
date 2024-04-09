@@ -6,7 +6,7 @@ Secret key for encryption is stored in `1Password > Dotfiles > DOTFILES_SECRET_K
 ## Backup
   - Export Brew bundle `brew bundle dump --force`
   - Commit and push dotfiles changes
-  - Run `DOTFILES_SECRET_KEY= script/backup-secrets`
+  - Run `DOTFILES_SECRET_KEY= script/backup-secrets.sh`
   - Export Postico connections
     - upload archive to [Dropbox](https://www.dropbox.com/home/Private/software/postico-connections)
 
@@ -15,7 +15,7 @@ Secret key for encryption is stored in `1Password > Dotfiles > DOTFILES_SECRET_K
   - [Download](https://github.com/vr4b4c/dotfiles) dotfiles as .zip and unzip
   - Change into dotfiles directory
   - Read secret key for encryption from `1Password > Dotfiles > DOTFILES_SECRET_KEY`
-  - Run `DOTFILES_SECRET_KEY= script/restore-secrets`
+  - Run `DOTFILES_SECRET_KEY= script/restore-secrets.sh`
   - Install git `brew install git`
   - Clone dotfiles: `git clone git@github.com:vr4b4c/dotfiles.git $HOME/dotfiles`
   - Install rcm `brew install rcm`

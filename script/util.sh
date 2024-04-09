@@ -6,7 +6,6 @@ error_code_unknown_command=2
 print_line () {
   local line=$1
   local indent=${2:-0}
-  local echo_args=$
 
   case $indent in
     0)
@@ -27,9 +26,9 @@ wait_continue () {
   local indent=$1
 
   local command=
- 
+
   print_line "Press 'c' to continue: " "$indent"
-  read command
+  read -r command
   if [[ "$command" != "c" ]]; then
     print_line "Unknown command: '$command'" "$indent"
     print_line "Exiting..." "$indent"

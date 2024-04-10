@@ -68,8 +68,10 @@ Secret key for encryption is stored in `1Password > Dotfiles > DOTFILES_SECRET_K
 ### Links
   - Thoughtbot [dotfiles](https://github.com/thoughtbot/dotfiles)
 
+### Docs
+  - [Wiki](docs/wiki.md)
+
 # TODO:
-  - add contribution guide (and document dev setup)
-  - an idea, add wiki for common tasks, problems, ...
-    - how to install brew package and have it automatically added to Brewfile
+- how to install brew package and have it automatically added to Brewfile?
+- what to do with Brewfile.lock.json?
   - check lua files in overcommit

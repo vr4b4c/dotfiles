@@ -1,7 +1,7 @@
 # vim: set ft=sh:
 # shellcheck disable=SC2034
 
-EXCLUDES="README.md script Gemfile Gemfile.lock"
+EXCLUDES="README.md script Gemfile Gemfile.lock docs"
 DOTFILES_DIRS="$HOME/dotfiles"
 UNDOTTED="Brewfile"
 # bash vim

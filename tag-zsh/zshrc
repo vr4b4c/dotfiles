@@ -134,5 +134,8 @@ eval `ssh-agent -s` > /dev/null
 export EDITOR=nvim
 export BUNDLER_EDITOR=nvim
 
+# Brew
+export HOMEBREW_BUNDLE_NO_LOCK=1
+
 [ -f $HOME/.secrets ] && source $HOME/.secrets
 [ -f $HOME/.zshrc.local ] && source $HOME/.zshrc.local

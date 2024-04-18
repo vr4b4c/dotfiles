@@ -1,7 +1,5 @@
 # Homebrew
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
 tap "homebrew/services"
 
 # General purpose
@@ -54,7 +52,6 @@ cask "docker"
 cask "postico"
 cask "sourcetree"
 cask "spotify"
-cask "whatsapp"
 cask "rectangle"
 
 # Skipped (after scanning the `brew list`):

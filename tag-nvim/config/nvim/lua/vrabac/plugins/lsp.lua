@@ -43,5 +43,11 @@ return {
       end,
     })
     lspconfig.bashls.setup({})
+    lspconfig.solargraph.setup({})
+    lspconfig.rubocop.setup({
+      init_options = {
+        safeAutocorrect = false,
+      },
+    })
   end,
 }

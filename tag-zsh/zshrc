@@ -134,6 +134,9 @@ eval `ssh-agent -s` > /dev/null
 export EDITOR=nvim
 export BUNDLER_EDITOR=nvim
 
+# Tmux italic font fix
+export TERM=screen-256color
+
 # Brew
 export HOMEBREW_BUNDLE_NO_LOCK=1
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ -f "$HOME/Brewfile" ] && ! brew bundle check --file="$HOME/Brewfile"; then
+if [ -f "$HOME/.Brewfile" ] && ! brew bundle check --global; then
   echo "[brew] Installing bundle dependencies"
-  brew bundle install --file="$HOME/Brewfile"
+  brew bundle install 
 fi

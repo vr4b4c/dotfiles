@@ -1,0 +1,19 @@
+# Homebrew
+tap "homebrew/bundle"
+tap "homebrew/services"
+
+# Lemonade
+tap "charmbracelet/tap"
+brew "charmbracelet/tap/gum"
+brew "bash"
+brew "python@3.9"
+brew "kubernetes-cli"
+brew "gh"
+brew "jq"
+brew "yq"
+brew "okteto"
+brew "direnv"
+
+# Cask
+cask "rectangle"
+cask "tableplus"

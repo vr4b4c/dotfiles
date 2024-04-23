@@ -2,12 +2,11 @@
 tap "homebrew/bundle"
 tap "homebrew/services"
 
-# General purpose
+# General
 brew "rcm"
 brew "git"
 brew "ack"
 brew "tree"
-brew "neovim"
 brew "asdf"
 brew "macos-trash"
 
@@ -18,12 +17,8 @@ brew "rbenv"
 # Tmux
 brew "tmux"
 
-# Bash
-# brew "bash-completion"
-# brew "coreutils"
-
-# neovim
-#   telescope
+# Neovim
+brew "neovim"
 brew "ripgrep"
 
 # Lua
@@ -34,27 +29,18 @@ brew "stylua"
 brew "bash-language-server"
 brew "shellcheck"
 
-#   neovim :checkhealth listed this as a warning for telescope
-# brew "fd"
-
 # oh-my-zsh
 brew "zsh-autosuggestions"
 brew "powerlevel10k"
 
+# fonts
+tap "homebrew/cask-fonts"
+cask "font-fira-code-nerd-font"
+
 # Cask
-cask "google-chrome"
 cask "slack"
-cask "transmission"
 cask "vlc"
 cask "iterm2"
-cask "docker"
-cask "postico"
 cask "sourcetree"
 cask "spotify"
 cask "rectangle"
-
-# Skipped (after scanning the `brew list`):
-#  - kubernetes-cli
-#  - tree-sitter
-#  - lua
-#  - luajit

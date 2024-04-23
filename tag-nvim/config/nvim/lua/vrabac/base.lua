@@ -5,7 +5,7 @@ vim.g.maplocalleader = " "
 vim.opt.number = true
 vim.opt.mouse = "a"
 vim.opt.list = true
-vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
+vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣", eol = "↲" }
 -- preview substitutions live
 vim.opt.inccommand = "split"
 vim.scriptencoding = "utf-8"

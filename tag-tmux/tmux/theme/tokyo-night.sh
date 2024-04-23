@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# shellcheck disable=all
 
 # [TokyoNight colors for Tmux](https://github.com/folke/tokyonight.nvim/blob/main/extras/tmux/tokyonight_storm.tmux)
 

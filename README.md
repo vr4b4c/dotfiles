@@ -56,7 +56,6 @@ Secret key for encryption is stored in `1Password > Dotfiles > DOTFILES_SECRET_K
 
 ### Tmux
   - Install [tmux plugin manager](https://github.com/tmux-plugins/tpm#installation)
-  - Install [tmux plugins](https://github.com/tmux-plugins/tpm#installing-plugins)
   - Italic font [fix](https://gist.github.com/gyribeiro/4192af1aced7a1b555df06bd3781a722)
 
 ### Neovim

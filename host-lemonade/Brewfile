@@ -15,7 +15,6 @@ brew "ruby-build"
 brew "rbenv"
 
 # Tmux
-brew "reattach-to-user-namespace"
 brew "tmux"
 
 # Neovim/telescope

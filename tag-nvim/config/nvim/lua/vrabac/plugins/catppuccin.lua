@@ -9,6 +9,8 @@ return {
       transparent_background = true,
     })
 
-    vim.cmd.colorscheme("catppuccin")
+    if vim.env.V_THEME == "catppuccin" then
+      vim.cmd.colorscheme("catppuccin")
+    end
   end,
 }

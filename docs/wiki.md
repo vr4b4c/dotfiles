@@ -15,3 +15,14 @@ bundle exec overcommit --sign
 Cool looking fonts
  - Meslo LGS NF (comes with Powerlevel10k)
  - FiraCode Nerd Font Mono
+
+## Custom environment variables
+Configuration setup is controlled via custom env variables. Custom variables are prefixed with `V_`.
+
+### V_HOST
+Used to load host specific NeoVim plugin directory.
+
+### V_THEME
+Used to load Tmux theme and NeoVim colorscheme. Supported options are
+- `tokyo-night`
+- `catppuccin`

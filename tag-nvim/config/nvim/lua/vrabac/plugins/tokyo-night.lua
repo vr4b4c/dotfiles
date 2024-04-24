@@ -12,6 +12,8 @@ return {
       -- transparent = false,
     })
 
-    -- vim.cmd.colorscheme("tokyonight")
+    if vim.env.V_THEME == "tokyo-night" then
+      vim.cmd.colorscheme("tokyonight")
+    end
   end,
 }

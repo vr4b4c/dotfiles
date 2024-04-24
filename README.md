@@ -66,6 +66,8 @@ Secret key for encryption is stored in `1Password > Dotfiles > DOTFILES_SECRET_K
 
 ### Links
   - Thoughtbot [dotfiles](https://github.com/thoughtbot/dotfiles)
+  - [kicstart.nvim](https://github.com/nvim-lua/kickstart.nvim)
+  - [LazyVim](https://www.lazyvim.org/)
 
 ### Docs
   - [Wiki](docs/wiki.md)

@@ -40,8 +40,10 @@ Secret key for encryption is stored in `1Password > Dotfiles > DOTFILES_SECRET_K
   - Installation [instructions](https://ohmyz.sh/#install)
 
 ### iTerm2
-  - Download and install [tokyo nights storm theme](https://github.com/folke/tokyonight.nvim/blob/main/extras/iterm/tokyonight_storm.itermcolors)
-  - Select theme in `iterm2 > Settings > Profiles > Colors > Color presets > tokyonight_storm`
+  - Download and install themes
+    - [tokyo night](https://github.com/folke/tokyonight.nvim/blob/main/extras/iterm/tokyonight_storm.itermcolors)
+    - [catppuccin](https://github.com/catppuccin/iterm/blob/main/colors/catppuccin-mocha.itermcolors)
+  - Select theme in `iterm2 > Settings > Profiles > Colors > Color presets`
   - Set transparency `iterm2 > Settings > Profiles > Window > Transparency = 10`
   - Allow clipboard usage `iterm2 > Settings > General > Selection > (check) Applications in terminal may access clipboard`
   - Mute sound `iterm2 > Settings > Profiles > Default > Terminal > (check) Silence bell`

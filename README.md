@@ -73,6 +73,3 @@ Secret key for encryption is stored in `1Password > Dotfiles > DOTFILES_SECRET_K
 
 ### Docs
   - [Wiki](docs/wiki.md)
-
-# TODO:
-  - check lua files in overcommit

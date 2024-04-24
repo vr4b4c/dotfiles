@@ -3,3 +3,6 @@ PreCommit:
     enabled: true
   ShellCheck:
     enabled: true
+  StyLua:
+    enabled: true
+    required_executable: './script/overcommit/stylua.sh'

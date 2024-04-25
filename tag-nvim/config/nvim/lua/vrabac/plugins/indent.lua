@@ -1,7 +1,6 @@
 return {
-  "lukas-reineke/indent-blankline.nvim",
-  main = "ibl",
+  "echasnovski/mini.indentscope",
   config = function()
-    require("ibl").setup({})
+    require("mini.indentscope").setup()
   end,
 }

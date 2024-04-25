@@ -37,10 +37,5 @@ vim.opt.wildoptions = "pum"
 vim.opt.pumblend = 5
 vim.opt.background = "dark"
 
-vim.api.nvim_create_autocmd("TextYankPost", {
-  desc = "Highlight when yanking (copying) text",
-  group = vim.api.nvim_create_augroup("highlight-yank", { clear = true }),
-  callback = function()
-    vim.highlight.on_yank()
-  end,
-})
+-- spellcheck
+vim.opt.spelllang = { "en" }

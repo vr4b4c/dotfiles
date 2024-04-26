@@ -16,7 +16,7 @@ Cool looking fonts
  - Meslo LGS NF (comes with Powerlevel10k)
  - FiraCode Nerd Font Mono
 
-## Custom environment variables
+## Customizations
 Configuration setup is controlled via custom env variables. Custom variables are prefixed with `V_`.
 
 ### V_HOST

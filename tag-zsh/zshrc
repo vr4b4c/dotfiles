@@ -140,7 +140,7 @@ export TERM=screen-256color
 # Brew
 export HOMEBREW_BUNDLE_NO_LOCK=1
 
-export V_THEME=tokyo-night
+export V_THEME=tokyo-night-storm
 
 [ -f $HOME/.secrets ] && source $HOME/.secrets
 [ -f $HOME/.zshrc.local ] && source $HOME/.zshrc.local

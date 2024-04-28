@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -g @plugin 'catppuccin/tmux'
+
 # [Config 2](https://github.com/catppuccin/tmux?tab=readme-ov-file#config-2)
 set -g @catppuccin_window_left_separator "█"
 set -g @catppuccin_window_right_separator "█ "
@@ -16,3 +18,5 @@ set -g @catppuccin_status_left_separator  ""
 set -g @catppuccin_status_right_separator " "
 set -g @catppuccin_status_fill "all"
 set -g @catppuccin_status_connect_separator "yes"
+
+display "Catppuccin config loaded!"

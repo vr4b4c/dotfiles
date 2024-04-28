@@ -41,12 +41,14 @@ Secret key for encryption is stored in `1Password > Dotfiles > DOTFILES_SECRET_K
 
 ### iTerm2
   - Download and install themes
-    - [tokyo night](https://github.com/folke/tokyonight.nvim/blob/main/extras/iterm/tokyonight_storm.itermcolors)
-    - [catppuccin](https://github.com/catppuccin/iterm/blob/main/colors/catppuccin-mocha.itermcolors)
-  - Select theme in `iterm2 > Settings > Profiles > Colors > Color presets`
-  - Set transparency `iterm2 > Settings > Profiles > Window > Transparency = 10`
-  - Allow clipboard usage `iterm2 > Settings > General > Selection > (check) Applications in terminal may access clipboard`
-  - Mute sound `iterm2 > Settings > Profiles > Default > Terminal > (check) Silence bell`
+    - [catppuccin latte](https://github.com/catppuccin/iterm/blob/main/colors/catppuccin-latte.itermcolors)
+    - [catppuccin mocha](https://github.com/catppuccin/iterm/blob/main/colors/catppuccin-mocha.itermcolors)
+    - [tokyo night day](https://github.com/folke/tokyonight.nvim/blob/main/extras/iterm/tokyonight_day.itermcolors)
+    - [tokyo night storm](https://github.com/folke/tokyonight.nvim/blob/main/extras/iterm/tokyonight_storm.itermcolors)
+  - Select theme in `iTerm2 > Settings > Profiles > Colors > Color presets`
+  - Set transparency `iTerm2 > Settings > Profiles > Window > Transparency = 10`
+  - Allow clipboard usage `iTerm2 > Settings > General > Selection > (check) Applications in terminal may access clipboard`
+  - Mute sound `iTerm2 > Settings > Profiles > Default > Terminal > (check) Silence bell`
 
 ### Rectangle
   - Start on login `Rectangle > Preferences... > System (3rd tab) > (check) Launch on login`
@@ -57,7 +59,8 @@ Secret key for encryption is stored in `1Password > Dotfiles > DOTFILES_SECRET_K
   - Select the new layout (listed under `Others`)
 
 ### Tmux
-  - Install [tmux plugin manager](https://github.com/tmux-plugins/tpm#installation)
+  - catppuccin theme plugin interferes with other themes
+    - on first install, set one of catppuccin themes and run tpm plugin installation procedure
   - Italic font [fix](https://gist.github.com/gyribeiro/4192af1aced7a1b555df06bd3781a722)
 
 ### Neovim

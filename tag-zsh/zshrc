@@ -124,6 +124,10 @@ alias rm="echo use del"
 alias del='trash'
 alias be='bundle exec'
 
+
+# Locale
+export LANG=en_US.UTF-8
+
 # RCRC
 export RCRC=$HOME/dotfiles/rcrc
 

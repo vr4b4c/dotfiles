@@ -33,6 +33,8 @@ return {
   config = function()
     -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#lua_ls
     local lspconfig = require("lspconfig")
+    -- https://github.com/hrsh7th/cmp-nvim-lsp?tab=readme-ov-file#setup
+    local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
     lspconfig.lua_ls.setup({
       on_init = function(client)
@@ -42,12 +44,20 @@ return {
         end
       end,
     })
-    lspconfig.bashls.setup({})
-    lspconfig.solargraph.setup({})
+    lspconfig.bashls.setup({
+      capabilities = capabilities,
+    })
+    lspconfig.solargraph.setup({
+      capabilities = capabilities,
+    })
     lspconfig.rubocop.setup({
+      capabilities = capabilities,
       init_options = {
         safeAutocorrect = false,
       },
+    })
+    lspconfig.tsserver.setup({
+      capabilities = capabilities,
     })
   end,
 }

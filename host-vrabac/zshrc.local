@@ -1,8 +1,10 @@
 export V_HOST=vrabac
 
 # SSH config
-for identity in $HOME/.ssh/*_rsa; do
-  ssh-add $identity > /dev/null 2>&1
+for ext in _rsa -ed25519 .pem; do
+  for identity in $HOME/.ssh/*$ext; do
+    ssh-add $identity > /dev/null 2>&1
+  done
 done
 
 # Vault

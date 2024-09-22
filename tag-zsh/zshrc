@@ -123,7 +123,7 @@ alias vim="nvim"
 alias rm="echo use del"
 alias del='trash'
 alias be='bundle exec'
-
+alias sourcetree='/Applications/Sourcetree.app/Contents/Resources/stree'
 
 # Locale
 export LANG=en_US.UTF-8

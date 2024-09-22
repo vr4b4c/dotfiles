@@ -11,6 +11,9 @@ return {
         tokyonight.setup({
           style = "storm",
           transparent = true,
+          on_colors = function(colors)
+            colors.comment = "#727ca7"
+          end,
         })
       elseif style == "day" then
         tokyonight.setup({

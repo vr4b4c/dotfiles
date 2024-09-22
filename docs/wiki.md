@@ -34,3 +34,11 @@ To change the theme
 - restart tmux (exit all tmux sessions and `tmux kill-server`)
 - change the color preset in the `iTerm2 > Settings > Profile > Colors > Color presets`
 - restart iTerm2
+
+## Ideas
+  - Josh Medeski [dotfiles](https://github.com/joshmedeski/dotfiles)
+    - OSX [options](https://github.com/joshmedeski/dotfiles/blob/main/install/osx.sh) looks very interesting
+    - [gitlinker](https://github.com/joshmedeski/dotfiles/blob/main/.config/nvim/lua/plugins/gitlinker.lua)
+
+## Tricks
+  - Run neovim in [Docker](https://github.com/LazyVim/LazyVim?tab=readme-ov-file#-getting-started)

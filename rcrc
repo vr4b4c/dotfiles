@@ -4,4 +4,4 @@
 EXCLUDES="README.md script Gemfile Gemfile.lock docs"
 DOTFILES_DIRS="$HOME/dotfiles"
 # bash vim
-TAGS="asdf git nvim ruby tmux zsh brew"
+TAGS="asdf git nvim ruby tmux zsh brew terraform"

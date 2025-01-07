@@ -59,5 +59,8 @@ return {
     lspconfig.tsserver.setup({
       capabilities = capabilities,
     })
+    lspconfig.terraformls.setup({
+      capabilities = capabilities,
+    })
   end,
 }

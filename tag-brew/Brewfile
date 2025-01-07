@@ -2,13 +2,19 @@
 tap "homebrew/bundle"
 tap "homebrew/services"
 
-# General
+# Utils
 brew "rcm"
 brew "git"
 brew "ack"
 brew "tree"
-brew "asdf"
 brew "macos-trash"
+brew "asdf"
+brew "direnv"
+brew "jq"
+brew "gh"
+brew "pre-commit"
+brew "make"
+brew "libpq"
 
 # Ruby
 brew "ruby-build"
@@ -26,6 +32,7 @@ brew "lua-language-server"
 brew "stylua"
 
 # Bash
+brew "bash"
 brew "bash-language-server"
 brew "shellcheck"
 
@@ -37,6 +44,14 @@ brew "powerlevel10k"
 tap "homebrew/cask-fonts"
 cask "font-fira-code-nerd-font"
 
+# AWS CLI
+brew "awscli"
+
+# Terraform
+tap "hashicorp/tap"
+brew "hashicorp/tap/terraform"
+brew "hashicorp/tap/terraform-ls"
+
 # Cask
 cask "slack"
 cask "vlc"
@@ -44,3 +59,7 @@ cask "iterm2"
 cask "sourcetree"
 cask "spotify"
 cask "rectangle"
+cask "google-chrome"
+cask "postico"
+cask "transmission"
+cask "docker"

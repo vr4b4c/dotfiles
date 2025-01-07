@@ -42,3 +42,18 @@ To change the theme
 
 ## Tricks
   - Run neovim in [Docker](https://github.com/LazyVim/LazyVim?tab=readme-ov-file#-getting-started)
+
+## Brew
+Common brew operations
+
+### Check reverse dependency
+Check with packages depend on a particular package.
+```bash
+brew uses --recursive --installed <package>
+```
+
+### Dry run brew dump
+Print brew dump to standard output to cross reference with ~/.Brewfile
+```bash
+brew bundle dump --file=-
+```

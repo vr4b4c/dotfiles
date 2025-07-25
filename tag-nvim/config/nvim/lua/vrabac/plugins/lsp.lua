@@ -35,6 +35,7 @@ return {
     local lspconfig = require("lspconfig")
     -- https://github.com/hrsh7th/cmp-nvim-lsp?tab=readme-ov-file#setup
     local capabilities = require("cmp_nvim_lsp").default_capabilities()
+    capabilities["general"] = { positionEncodings = {'utf-16'} }
 
     lspconfig.lua_ls.setup({
       on_init = function(client)

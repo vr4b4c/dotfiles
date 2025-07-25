@@ -3,5 +3,6 @@
 .bundle
 .byebug_history
 __vrabac/*
+.vrabac
 tags
 .tool-versions

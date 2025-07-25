@@ -49,6 +49,11 @@ return {
     })
     lspconfig.solargraph.setup({
       capabilities = capabilities,
+      settings = {
+        solargraph = {
+          diagnostics = true
+        }
+      }
     })
     lspconfig.rubocop.setup({
       capabilities = capabilities,
@@ -59,7 +64,7 @@ return {
     lspconfig.tsserver.setup({
       capabilities = capabilities,
     })
-    lspconfig.terraformls.setup({
+    lspconfig.pyright.setup({
       capabilities = capabilities,
     })
   end,

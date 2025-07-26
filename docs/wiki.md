@@ -57,3 +57,9 @@ Print brew dump to standard output to cross reference with ~/.Brewfile
 ```bash
 brew bundle dump --file=-
 ```
+
+## LSP servers
+Procedures for installing LSP servers.
+
+### Pyright
+Installed via [npm](https://github.com/microsoft/pyright/blob/7f60dc7fcfb6e569a05593b4407dd073228cc782/docs/installation.md#npm-package). This means that project must specify node version (currently managed via asdf) and pyright npm package must be globally installed.

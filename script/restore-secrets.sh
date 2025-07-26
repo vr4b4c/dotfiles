@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 
+set -o errexit
+set -o pipefail
+set -o nounset
+
 source ./script/util.sh
+
+DOTFILES_SECRET_KEY="${DOTFILES_SECRET_KEY:-$(op read op://Employee/Dotfiles/DOTFILES_SECRET_KEY)}"
 
 restore_shell_secrets () {
   print_line "Restoring up shell secrets..."
@@ -8,11 +14,11 @@ restore_shell_secrets () {
   cd "$HOME" || exit
   while [ ! -f "$HOME/secrets.enc" ]
   do
-    print_subline "Download secrets.enc (https://www.dropbox.com/home/Private/software)"
+    print_subline "Download secrets.enc ($secret_store_location) to $HOME"
     wait_continue 1
   done
 
-  openssl aes-256-cbc -d -md md5 -in secrets.enc -out .secrets -k "$DOTFILES_SECRET_KEY"
+  decrypt secrets.enc .secrets
   rm secrets.enc
   print_subline "Done"
 }
@@ -23,11 +29,11 @@ restore_ssh_keys() {
   cd "$HOME" || exit
   while [ ! -f "$HOME/ssh.tgz.enc" ]
   do
-    print_subline "Download ssh.tgz.enc (https://www.dropbox.com/home/Private/software)"
+    print_subline "Download ssh.tgz.enc ($secret_store_location) to $HOME"
     wait_continue 1
   done
 
-  openssl aes-256-cbc -d -md md5 -in ssh.tgz.enc -out ssh.tgz -k "$DOTFILES_SECRET_KEY"
+  decrypt ssh.tgz.enc ssh.tgz
   tar -xzvf ssh.tgz  &> /dev/null
   rm ssh.tgz.enc ssh.tgz
   print_subline "Done"

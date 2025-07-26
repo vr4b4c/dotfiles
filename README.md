@@ -1,27 +1,28 @@
 # Dotfiles
 
 ## Config
-Secret key for encryption is stored in `1Password > Dotfiles > DOTFILES_SECRET_KEY`
+Secret key for encryption is stored in `1Password > Employee > Dotfiles > DOTFILES_SECRET_KEY`
 
 ## Backup
   - Export Brew bundle `brew bundle dump --force`
   - Commit and push dotfiles changes
-  - Run `DOTFILES_SECRET_KEY=*** script/backup-secrets.sh`
-  - Export Postico connections
-    - upload archive to [Dropbox](https://www.dropbox.com/home/Private/software/postico-connections)
+  - Run `script/backup-secrets.sh`
+  - Backup archives from the previous step
+    - `ssh.tgz.enc`
+    - `secrets.enc`
 
 ## Install
   - Install [Brew](https://brew.sh)
-  - [Download](https://github.com/vr4b4c/dotfiles) dotfiles as .zip and unzip into `~/dotfiles`
-  - `cd` into dotfiles directory
-  - Read secret key for encryption from `1Password > Dotfiles > DOTFILES_SECRET_KEY`
-  - Run `DOTFILES_SECRET_KEY=*** script/restore-secrets.sh`
-  - Install git `brew install git`
-  - Clone dotfiles: `git clone git@github.com:vr4b4c/dotfiles.git $HOME/dotfiles`
-  - Install rcm `brew install rcm`
+  - Install "build" packages `brew install 1password-cli rcm`
+  - Add 1Password CLI account `op account add`
+  - Login using 1Password CLI `op signin`
+  - Run installation script
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/vr4b4c/dotfiles/HEAD/script/install.sh)"
+```
   - Decide which hostname to use (supported hostnames are `host-*` directories, `-B` switch in the next command)
-  - Setup dotfiles: `RCRC=$HOME/dotfiles/rcrc rcup -B vrabac`
-  - Install Brew cask packages with `Cmd + Space`
+  - Setup dotfiles: `RCRC=$HOME/dotfiles/rcrc rcup -B <hostname>` (without `host-` prefix)
+  - Install/activate Brew cask packages with `Cmd + Space`
 
 ### OSX
   - Dock on the left
@@ -62,12 +63,6 @@ Secret key for encryption is stored in `1Password > Dotfiles > DOTFILES_SECRET_K
   - catppuccin theme plugin interferes with other themes
     - on first install, set one of catppuccin themes and run tpm plugin installation procedure
   - Italic font [fix](https://gist.github.com/gyribeiro/4192af1aced7a1b555df06bd3781a722)
-
-### Neovim
-  - tsserver LSP system depenencies
-    - Install nodejs plugin `asdf plugin add nodejs`
-    - Install default nodejs version `asdf install nodejs X.Y.Z`
-    - [tsserver](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#tsserver)
 
 ### Links
   - Thoughtbot [dotfiles](https://github.com/thoughtbot/dotfiles)

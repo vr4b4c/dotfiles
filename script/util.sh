@@ -2,6 +2,7 @@
 
 error_code_secret_key_undefined=1
 error_code_unknown_command=2
+export secret_store_location="https://www.dropbox.com/home/Private/software"
 
 print_line () {
   local line=$1
@@ -42,4 +43,18 @@ ensure_secret_key_defined () {
     echo "Exiting..."
     exit $error_code_secret_key_undefined
   fi
+}
+
+encrypt () {
+  local input=$1
+  local output=$2
+
+  openssl aes-256-cbc -e -md sha512 -pbkdf2 -iter 1000000 -in "$input" -out "$output" -k "$DOTFILES_SECRET_KEY"
+}
+
+decrypt () {
+  local input=$1
+  local output=$2
+
+  openssl aes-256-cbc -d -md sha512 -pbkdf2 -iter 1000000 -in "$input" -out "$output" -k "$DOTFILES_SECRET_KEY"
 }

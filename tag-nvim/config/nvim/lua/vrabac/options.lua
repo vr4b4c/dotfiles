@@ -39,3 +39,5 @@ vim.opt.background = "dark"
 
 -- spellcheck
 vim.opt.spelllang = { "en" }
+
+vim.diagnostic.config({ virtual_lines = true })

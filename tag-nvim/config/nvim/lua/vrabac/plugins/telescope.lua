@@ -6,7 +6,7 @@ return {
     {
       "<C-p>",
       function()
-        require("telescope.builtin").find_files()
+        require("telescope.builtin").git_files()
       end,
     },
     {
@@ -21,11 +21,6 @@ return {
     local actions = require("telescope.actions")
 
     telescope.setup({
-      -- pickers = {
-      --   find_files = {
-      --     hidden = true
-      --   }
-      -- },
       defaults = {
         mappings = {
           i = {

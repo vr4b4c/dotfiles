@@ -6,3 +6,4 @@ if vim.fn.has("macunix") then
 end
 
 require("vrabac/lazy")
+require("vrabac/lsp")

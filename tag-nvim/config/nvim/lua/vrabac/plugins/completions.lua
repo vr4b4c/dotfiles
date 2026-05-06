@@ -5,6 +5,9 @@ return {
       { "saadparwaiz1/cmp_luasnip" },
       { "rafamadriz/friendly-snippets" },
     },
+    config = function()
+      require("luasnip.loaders.from_vscode").lazy_load()
+    end
   },
   {
     "hrsh7th/nvim-cmp",
@@ -20,7 +23,9 @@ return {
       local types = require("cmp.types")
       local luasnip = require("luasnip")
       local lspkind = require("lspkind")
-      require("luasnip.loaders.from_vscode").lazy_load()
+      local cmp_nvim_lsp = require("cmp_nvim_lsp")
+
+      vim.lsp.config("*", { capabilities = cmp_nvim_lsp.default_capabilities() })
 
       cmp.setup({
         completion = {
@@ -59,8 +64,7 @@ return {
         sources = cmp.config.sources({
           { name = "nvim_lsp" },
           { name = "luasnip" },
-        }, {
-          { name = "buffer" },
+          { name = "buffer" }
         }),
       })
 

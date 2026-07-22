@@ -6,10 +6,12 @@ set -o nounset
 
 source ./script/util.sh
 
+source_dir="${SOURCE_DIR:-$HOME}"
+
 backup_ssh_keys() {
   print_line "Backing up SSH keys..."
 
-  cd "$HOME" || exit
+  cd "$source_dir" || exit
   COPYFILE_DISABLE=1 tar -czvf ssh.tgz .ssh &> /dev/null
   encrypt ssh.tgz ssh.tgz.enc
 
@@ -24,10 +26,10 @@ backup_ssh_keys() {
 backup_shell_secrets () {
   print_line "Backing up shell secrets..."
 
-  cd "$HOME" || exit
+  cd "$source_dir" || exit
   encrypt .secrets secrets.enc
 
-  print_subline "Backup ~/secrets.enc ($secret_store_location)"
+  print_subline "Backup $source_dir/secrets.enc ($secret_store_location)"
   wait_continue 1
 
   print_subline "Removing artifacts"

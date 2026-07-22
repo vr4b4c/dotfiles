@@ -8,13 +8,15 @@ source ./script/util.sh
 
 DOTFILES_SECRET_KEY="${DOTFILES_SECRET_KEY:-$(op read op://Employee/Dotfiles/DOTFILES_SECRET_KEY)}"
 
+destination_dir="${DESTINATION_DIR:-$HOME}"
+
 restore_shell_secrets () {
   print_line "Restoring up shell secrets..."
 
-  cd "$HOME" || exit
-  while [ ! -f "$HOME/secrets.enc" ]
+  cd "$destination_dir" || exit
+  while [ ! -f "$destination_dir/secrets.enc" ]
   do
-    print_subline "Download secrets.enc ($secret_store_location) to $HOME"
+    print_subline "Download secrets.enc ($secret_store_location) to $destination_dir"
     wait_continue 1
   done
 
@@ -26,10 +28,10 @@ restore_shell_secrets () {
 restore_ssh_keys() {
   print_line "Restoring SSH keys..."
 
-  cd "$HOME" || exit
-  while [ ! -f "$HOME/ssh.tgz.enc" ]
+  cd "$destination_dir" || exit
+  while [ ! -f "$destination_dir/ssh.tgz.enc" ]
   do
-    print_subline "Download ssh.tgz.enc ($secret_store_location) to $HOME"
+    print_subline "Download ssh.tgz.enc ($secret_store_location) to $destination_dir"
     wait_continue 1
   done
 
@@ -41,7 +43,7 @@ restore_ssh_keys() {
 
 main () {
   ensure_secret_key_defined
-  restore_shell_secrets
+  # restore_shell_secrets
   restore_ssh_keys
 }
 

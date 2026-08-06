@@ -5,5 +5,4 @@ tap "homebrew/services"
 # Cask
 cask "google-chrome"
 cask "transmission"
-cask "docker"
 cask "postico"

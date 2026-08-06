@@ -6,3 +6,5 @@ __vrabac/*
 .vrabac
 tags
 .tool-versions
+
+**/.claude/settings.local.json

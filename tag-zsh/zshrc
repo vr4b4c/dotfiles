@@ -134,6 +134,9 @@ export LANG=en_US.UTF-8
 # RCRC
 export RCRC=$HOME/dotfiles/rcrc
 
+# Add local bin to path (Claude Code)
+export PATH="$HOME/.local/bin:$PATH"
+
 # SSH agent
 eval `ssh-agent -s` > /dev/null
 

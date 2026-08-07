@@ -40,6 +40,9 @@ Secret key for encryption is stored in `1Password > Employee > Dotfiles > DOTFIL
 ### Oh my zsh
   - Installation [instructions](https://ohmyz.sh/#install)
 
+### Claude Code
+  - Installation [instructions](https://code.claude.com/docs/en/quickstart)
+
 ### iTerm2
   - Download and install themes
     - [catppuccin latte](https://github.com/catppuccin/iterm/blob/main/colors/catppuccin-latte.itermcolors)

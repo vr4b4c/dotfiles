@@ -1,7 +1,3 @@
-# Homebrew
-tap "homebrew/bundle"
-tap "homebrew/services"
-
 # Cask
 cask "google-chrome"
 cask "transmission"
